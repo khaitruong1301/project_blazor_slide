@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = blazor_slide_mau
+build_property.ProjectDir = /Volumes/Cybersoft/dotNet/blazor_mau/blazor_slide_mau/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
