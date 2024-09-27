@@ -15,23 +15,42 @@
     <h3>Event binding</h3>
     <p id="txtCounter">Counter: @counter</p>
     <button id="btnIncrement" class="btn btn-primary" @onclick="IncrementCounter">Click me</button>
+    <hr />
+    <h3>Register</h3>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <p>user name</p>
+                <input class="form-control w-50" @bind-value="@userRegister.userName" />
+            </div>
+            <div class="form-group">
+                <p>password</p>
+                <input class="form-control w-50" @bind-value="@userRegister.password" type="password" />
+            </div>
+            <div class="form-group">
+                <p>fullname</p>
+                <input class="form-control w-50" @bind-value="@userRegister.fullname" />
+            </div>
+            <div class="form-group">
+                <p>gender</p>
+                <div class="form-control" type="radio" ></div>
+            </div>
+        </div>
+
+    </div>
+
 
 </div>
 
 @code {
     //phần code của giao diện razor component
     private string name = "Trương Tấn Khải";
-    
+    private UserRegister userRegister = new UserRegister();
     private int counter = 1;
     private void IncrementCounter()
     {
         counter++;
     }
-
-
-
-
-
     private int sum(int a, int b)
     {
         return a + b;

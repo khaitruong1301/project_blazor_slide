@@ -1,0 +1,92 @@
+@page "/userinfoform"
+
+<h3>User Information Form</h3>
+
+<EditForm Model="@userInfo">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <!-- Input Text - Họ và Tên -->
+    <div>
+        <label for="fullName">Full Name:</label>
+        <input id="fullName" @bind-value="userInfo.FullName" @bind-value:event="oninput" placeholder="Enter your name" />
+        <p><small>oninput event triggered, Name: @userInfo.FullName</small></p>
+    </div>
+
+    <!-- Select Dropdown - Giới tính -->
+    <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" @bind="userInfo.Gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <p><small>onchange event triggered, Gender: @userInfo.Gender</small></p>
+    </div>
+
+    <!-- Radio Button - Tình trạng hôn nhân -->
+    <div>
+        <label>Marital Status:</label>
+        <input type="radio" @bind-value="userInfo.MaritalStatus" /> Single
+        <input type="radio" @bind-value="userInfo.MaritalStatus"  /> Married
+        <input type="radio" @bind-value="userInfo.MaritalStatus" /> Other
+        <p><small>Marital Status: @userInfo.MaritalStatus</small></p>
+    </div>
+
+    <!-- Checkbox - Đăng ký nhận bản tin -->
+    <div>
+        <input type="checkbox" @bind="userInfo.ReceiveNewsletter"  /> Subscribe to newsletter?
+        <p><small>Receive Newsletter: @(userInfo.ReceiveNewsletter ? "Yes" : "No")</small></p>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit" class="btn btn-primary" @onclick="OnSubmit">Submit</button>
+    </div>
+</EditForm>
+
+<!-- Hiển thị thông tin người dùng -->
+@if (isSubmitted)
+{
+    <h4>User Information:</h4>
+    <ul>
+        <li><b>Full Name:</b> @userInfo.FullName</li>
+        <li><b>Gender:</b> @userInfo.Gender</li>
+        <li><b>Marital Status:</b> @userInfo.MaritalStatus</li>
+        <li><b>Receive Newsletter:</b> @(userInfo.ReceiveNewsletter ? "Yes" : "No")</li>
+    </ul>
+}
+
+@code {
+    // Lớp lưu trữ thông tin người dùng
+    private UserInfo userInfo = new UserInfo();
+    private bool isSubmitted = false;
+
+    // Xử lý sự kiện Radio Button thay đổi
+    private void OnRadioChange(ChangeEventArgs e)
+    {
+        userInfo.MaritalStatus = e.Value.ToString();
+    }
+
+    // Xử lý sự kiện Checkbox thay đổi
+    private void OnCheckboxChange(ChangeEventArgs e)
+    {
+        userInfo.ReceiveNewsletter = (bool)e.Value;
+    }
+
+    // Xử lý sự kiện Submit
+    private void OnSubmit()
+    {
+        isSubmitted = true;
+    }
+
+    // Lớp mô hình dữ liệu người dùng
+    private class UserInfo
+    {
+        public string FullName { get; set; }
+        public string Gender { get; set; }
+        public string MaritalStatus { get; set; }
+        public bool ReceiveNewsletter { get; set; }
+    }
+}
