@@ -1,59 +1,127 @@
 @page "/databinding"
+@using System.Text.Json
 @layout HomePageMaster
-<div class="container">
+
+<div class="container mt-4">
     <h3>One way binding</h3>
     <span class="badge bg-danger">
         Hello @name
     </span>
     <br />
     <span class="badge bg-success">
-        total price: @sum(10, 5)
+        Total price: @sum(10, 5)
     </span>
     <hr />
-
 
     <h3>Event binding</h3>
     <p id="txtCounter">Counter: @counter</p>
     <button id="btnIncrement" class="btn btn-primary" @onclick="IncrementCounter">Click me</button>
     <hr />
-    <h3>Register</h3>
-    <div class="row">
-        <div class="col-6">
-            <div class="form-group">
-                <p>user name</p>
-                <input class="form-control w-50" @bind-value="@userRegister.userName" />
-            </div>
-            <div class="form-group">
-                <p>password</p>
-                <input class="form-control w-50" @bind-value="@userRegister.password" type="password" />
-            </div>
-            <div class="form-group">
-                <p>fullname</p>
-                <input class="form-control w-50" @bind-value="@userRegister.fullname" />
-            </div>
-            <div class="form-group">
-                <p>gender</p>
-                <div class="form-control" type="radio" ></div>
-            </div>
-        </div>
 
-    </div>
+    <EditForm Model="@userRegister" OnValidSubmit="HandleSubmit" class="row">
+        <DataAnnotationsValidator />
+        <div class="col-6">
+            <h3>Register</h3>
+            <ValidationSummary class="text text-danger" />
+            <div class="form-group">
+                <p>User name</p>
+                <input class="form-control w-50" @bind="userRegister.UserName" />
+                <ValidationMessage For="@(() => userRegister.UserName)" class="text text-danger" />
+            </div>
+            <div class="form-group">
+                <p>Password</p>
+                <input class="form-control w-50" @bind="userRegister.Password" type="password" />
+                <ValidationMessage For="@(() => userRegister.Password)" class="text text-danger" />
+            </div>
+            <div class="form-group">
+                <p>Email</p>
+                <input class="form-control w-50" @bind="userRegister.Email" />
+                <ValidationMessage For="@(() => userRegister.Email)" class="text text-danger" />
+            </div>
+            <div class="form-group">
+                <p>Fullname</p>
+                <input class="form-control w-50" @bind="userRegister.Fullname" />
+                <ValidationMessage For="@(() => userRegister.Fullname)" class="text text-danger" />
+            </div>
+            <div class="form-group mt-2">
+                <p>Gender</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" @onchange="HandleChange" name="gender" id="male"
+                        value="Male" checked="@userRegister.Gender == Male" />
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" @onchange="HandleChange" name="gender" id="female"
+                        value="Female" checked="@userRegister.Gender == Female" />
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="mt-2">Country</p>
+                <select class="form-control w-50" @bind="userRegister.Country">
+                    <option value="VN">Việt Nam</option>
+                    <option value="EN">English</option>
+                </select>
+            </div>
+            <button class="btn btn-success mt-2" type="submit">Register</button>
+        </div>
+        <div class="col-6">
+            @if (isSubmitted)
+            {
+                <h3>User Information</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <p><strong>User Name:</strong> @userRegister.UserName</p>
+                        <p><strong>User Name:</strong> @userRegister.Email</p>
+                        <p><strong>Password:</strong> @userRegister.Password</p>
+                        <p><strong>Full Name:</strong> @userRegister.Fullname</p>
+                        <p><strong>Gender:</strong> @userRegister.Gender</p>
+                        <p><strong>Country:</strong> @userRegister.Country</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </EditForm>
 
 
 </div>
 
 @code {
-    //phần code của giao diện razor component
-    private string name = "Trương Tấn Khải";
-    private UserRegister userRegister = new UserRegister();
-    private int counter = 1;
+
+    // Model for form binding
+    private UserRegisterModel userRegister = new UserRegisterModel();
+
+    // Method to handle form submission
+    private void HandleSubmit()
+    {
+        string jsonString = JsonSerializer.Serialize(userRegister);
+        Console.WriteLine(jsonString);
+        isSubmitted = true;
+    }
+
+    // Variable to check if form is submitted
+    private bool isSubmitted = false;
+    // One-way binding variables
+    private string name = "World";
+
+    // Event binding variables
+    private int counter = 0;
+
+    // Method for incrementing the counter
     private void IncrementCounter()
     {
         counter++;
     }
+
+
+    // Xử lý sự kiện onchange để cập nhật biến selectedGender
+    private void HandleChange(ChangeEventArgs e)
+    {
+        userRegister.Gender = e.Value.ToString();
+    }
+    // Method to calculate sum
     private int sum(int a, int b)
     {
         return a + b;
     }
-
-};
+}

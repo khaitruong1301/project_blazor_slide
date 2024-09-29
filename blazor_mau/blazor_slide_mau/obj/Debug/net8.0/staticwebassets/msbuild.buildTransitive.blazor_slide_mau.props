@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/blazor_slide_mau.props" />
+  <Import Project="..\buildMultiTargeting\blazor_slide_mau.props" />
 </Project>
