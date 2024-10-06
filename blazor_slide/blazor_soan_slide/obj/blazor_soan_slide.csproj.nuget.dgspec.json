@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj": {}
+    "/Volumes/Cybersoft/dotNet/github_blazor/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj": {}
   },
   "projects": {
-    "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj": {
+    "/Volumes/Cybersoft/dotNet/github_blazor/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj",
+        "projectUniqueName": "/Volumes/Cybersoft/dotNet/github_blazor/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj",
         "projectName": "blazor_soan_slide",
-        "projectPath": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj",
-        "packagesPath": "C:\\Users\\TGC\\.nuget\\packages\\",
-        "outputPath": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\obj\\",
+        "projectPath": "/Volumes/Cybersoft/dotNet/github_blazor/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj",
+        "packagesPath": "/Users/khai/.nuget/packages/",
+        "outputPath": "/Volumes/Cybersoft/dotNet/github_blazor/blazor_slide/blazor_soan_slide/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TGC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/khai/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -50,6 +50,10 @@
             "Microsoft.Identity.Web.UI": {
               "target": "Package",
               "version": "[1.*, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -71,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

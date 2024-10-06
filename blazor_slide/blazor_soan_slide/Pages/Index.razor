@@ -1,9 +1,44 @@
 ﻿@page "/"
 @layout HomePageMaster
 
-<h1>Home page</h1>
+<div class="container ">
+    <h1>Home page</h1>
+    <div class="row">
+        @foreach (var item in lstProd)
+        {
+            <div class="col-3 mt-2">
+                <ProductCard prod="@item" eventClick="HandleChildClick" />
+            </div>
+        }
+        <Modal>
+            <h3>Nội dung các component child content</h3>
+        </Modal>
+        <hr class="mt-2"/>
+        <h3>Detail</h3>
+        <TableDetail productDetail="productDetail" />
+    </div>
+</div>
 
-@code{
-    
+@code {
+    private ProductCardModel productDetail = new ProductCardModel();
+    private List<ProductCardModel> lstProd = new List<ProductCardModel>(){
+        new ProductCardModel { id = 1, name = "iphone", price = 1000 },
+        new ProductCardModel { id = 2, name = "iphone1", price = 2000 },
+        new ProductCardModel { id = 3, name = "iphone2", price = 3000 },
+        new ProductCardModel { id = 4, name = "iphone3", price = 4000 },
+    };
+    private void HandleChildClick(ProductCardModel prodClick)
+    {
+        productDetail = prodClick;
+    }
+
+
+
+
+
+    private ProductCardModel prod = new ProductCardModel() { id = 1, name = "iphone", price = 1000 };
+
 }
+
+
 

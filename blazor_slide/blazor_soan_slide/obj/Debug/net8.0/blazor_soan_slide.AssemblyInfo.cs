@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor_soan_slide")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29848c15d11b009dfad016e4a86ece444e985678")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7c6079b34a530a6ceeeb5988e5a67c90170743f")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor_soan_slide")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor_soan_slide")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
