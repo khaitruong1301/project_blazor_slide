@@ -7,7 +7,7 @@ public partial class HttpResponse<T>
 
     public string message { get; set; }
 
-    public IEnumerable<T> content { get; set; }
+    public T content { get; set; }
 
     public DateTime dateTime { get; set; }
 }

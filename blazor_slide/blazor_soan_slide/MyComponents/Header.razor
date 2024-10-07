@@ -1,4 +1,6 @@
 @namespace blazor_soan_slide.MyComponents
+@inject NavigationManager Navigation
+
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white">
     <a class="navbar-brand" href="#">Cybersoft razor</a>
     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
@@ -32,12 +34,26 @@
                 </div>
             </li>
         </ul>
-        <form class="d-flex my-2 my-lg-0">
-            <input class="form-control me-sm-2" type="text" placeholder="Search" />
+        <EditForm class="d-flex my-2 my-lg-0"  EditContext="editContext" OnSubmit="HandleSubmit">
+            <input class="form-control me-sm-2" type="text" placeholder="Search" @bind-value="keyword" />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                 Search
             </button>
-        </form>
+        </EditForm>
     </div>
 </nav>
 
+
+@code{ 
+    private string keyword {get;set;}
+     private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
+        editContext = new EditContext(new object());
+    }
+    private async Task HandleSubmit(){
+        Navigation.NavigateTo($"/search?k={keyword}");  
+    }
+}

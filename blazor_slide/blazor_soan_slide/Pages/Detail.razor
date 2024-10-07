@@ -1,0 +1,32 @@
+@page "/detail/{id:int}"
+@layout HomePageMaster
+@inject HttpClient Http
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-4">
+            <img src="@prod.Image" alt="..." />
+        </div>
+        <div class="col-8">
+            <h3>@prod.Name</h3>
+            <p>@prod.Description</p>
+        </div>
+    </div>
+    <button class="btn btn-dark">get</button>
+
+    <button class="btn btn-dark" @onclick="getProductDetail">Get product detail</button>
+</div>
+
+
+@code {
+    [Parameter]
+    public int id { get; set; } // Tham số nhận giá trị từ URL
+    ProductDetailModel prod = new ProductDetailModel();
+    protected  async Task getProductDetail()
+    {
+        // Gửi yêu cầu GET đến API
+        var response = await Http.GetFromJsonAsync<HttpResponse<ProductDetailModel>>($"https://apistore.cybersoft.edu.vn/api/Product/getbyid?id={id}");
+        prod = response.content;
+    }
+}

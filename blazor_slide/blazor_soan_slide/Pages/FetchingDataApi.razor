@@ -1,66 +1,38 @@
 @page "/FetchingDataApi"
-@using System.Net.Http.Json
-@using System.Text.Json;
-@using System.Diagnostics;
-@using Newtonsoft.Json;
 @inject HttpClient Http
 @layout HomePageMaster
 
 
-<button class="btn btn-dark" @onclick="GetItems">Get</button>
 
 <div class="container">
     <h3>Product list</h3>
+    <button class="btn btn-dark" @onclick="GetItems">Get</button>
     <div class="row">
         @foreach (var item in items)
         {
-            <div class="col-4 mt-2">
+            <div class="col-md-4 mt-2">
                 <div class="card">
-                    <img src="@item.image" alt="..." width="300" height="300" />
+                    <img src="@item.Image" alt="@item.Alias" />
                     <div class="card-body">
-                        <h3>@item.name</h3>
-                        <p>@item.price</p>
-                        <a href="/detail/@item.id" class="btn btn-dark">Detail</a>
+                        <h3>@item.Name</h3>
+                        <p>@item.Price</p>
+                        <a href="/detail/@item.Id" class="btn btn-dark">Detail</a>
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
-
 @code {
-    private IEnumerable<ProductModel> items;
-    private async Task getApi()
-    {
-        try
-        {
-            // Gửi yêu cầu GET đến API và deserialize tự động
-            var response = await
-            Http.GetFromJsonAsync<HttpResponse<ProductModel>>("https://apistore.cybersoft.edu.vn/api/Product");
 
-            // Kiểm tra nếu response khác null và có dữ liệu
-            if (response != null && response.content != null)
-            {
-                items = response.content;
-                Debug.WriteLine("Data fetched successfully.");
-            }
-            else
-            {
-                Debug.WriteLine("Failed to fetch data or empty response.");
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"Error fetching data: {ex.Message}");
-        }
-
-    }
-
+    private IEnumerable<ProductModel> items = new List<ProductModel>();
     private async Task GetItems()
     {
-        await getApi();
-        // Sử dụng Debugger.Break() để ngắt luồng thực thi
-        Console.WriteLine($"Exception: ");
+        // Gửi yêu cầu GET đến API
+        var response = await Http.GetFromJsonAsync<HttpResponse<ProductModel[]>>("https://apistore.cybersoft.edu.vn/api/Product");
+        items = response.content;
     }
-
 }
+
+
+
