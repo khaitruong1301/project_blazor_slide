@@ -5,60 +5,60 @@
 @using Newtonsoft.Json;
 @inject HttpClient Http
 @layout HomePageMaster
-<button class="btn btn-dark" @onclick="GetItems">Get</button>
-@foreach (var item in items)
-{
-    <h1>@item.name</h1>
-}
 
+
+<button class="btn btn-dark" @onclick="GetItems">Get</button>
+
+<div class="container">
+    <h3>Product list</h3>
+    <div class="row">
+        @foreach (var item in items)
+        {
+            <div class="col-4 mt-2">
+                <div class="card">
+                    <img src="@item.image" alt="..." width="300" height="300" />
+                    <div class="card-body">
+                        <h3>@item.name</h3>
+                        <p>@item.price</p>
+                        <a href="/detail/@item.id" class="btn btn-dark">Detail</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
 
 @code {
-    private List<ProductModel> items = new();
-    protected override async void OnInitialized()
+    private IEnumerable<ProductModel> items;
+    private async Task getApi()
     {
-      
-            // Gửi yêu cầu GET đến API
-            var response = await Http.GetAsync("https://apistore.cybersoft.edu.vn/api/Product");
-            Debug.WriteLine($"Current count is  before increment.");
+        try
+        {
+            // Gửi yêu cầu GET đến API và deserialize tự động
+            var response = await
+            Http.GetFromJsonAsync<HttpResponse<ProductModel>>("https://apistore.cybersoft.edu.vn/api/Product");
 
-            if (response.IsSuccessStatusCode)
+            // Kiểm tra nếu response khác null và có dữ liệu
+            if (response != null && response.content != null)
             {
-                // Đọc toàn bộ nội dung JSON từ HttpContent
-                dynamic jsonResponse = await response.Content.ReadAsStringAsync();
-                HttpResponse<ProductModel> apiResponse = JsonConvert.DeserializeObject<HttpResponse<ProductModel>>(jsonResponse);
-
-                
-
-                @* // Deserialize JSON thành đối tượng ApiResponse<List<ProductModel>>
-                var options = new JsonSerializerOptions
-                {
-                        PropertyNameCaseInsensitive = true, // Cho phép không phân biệt chữ hoa và chữ thường trong tên thuộc tính
-                        WriteIndented = true                // Định dạng JSON dễ đọc
-                }; *@
-
-                @* HttpResponse<ProductModel> apiResponse = JsonConverter.Deserialize<HttpResponse<ProductModel>>(jsonResponse,options); *@
-
-       
-
-                @* // In ra thông tin sản phẩm
-                foreach (var product in products)
-                {
-                    Console.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
-                }
-                Console.WriteLine("Product List:");*@
-
-                @* items = products;   *@
+                items = response.content;
+                Debug.WriteLine("Data fetched successfully.");
             }
             else
             {
-                Console.WriteLine($"Failed to fetch data. Status Code: {response.StatusCode}, Reason: {response.ReasonPhrase}");
+                Debug.WriteLine("Failed to fetch data or empty response.");
             }
-     
-    }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Error fetching data: {ex.Message}");
+        }
 
+    }
 
     private async Task GetItems()
     {
+        await getApi();
         // Sử dụng Debugger.Break() để ngắt luồng thực thi
         Console.WriteLine($"Exception: ");
     }

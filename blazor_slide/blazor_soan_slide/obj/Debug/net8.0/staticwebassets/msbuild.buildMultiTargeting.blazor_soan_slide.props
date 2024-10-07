@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/blazor_soan_slide.props" />
-</Project>
