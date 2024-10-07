@@ -1,0 +1,30 @@
+@layout HomePageMaster
+
+
+
+<button class="btn btn-dark">get</button>
+
+@code {
+    private string param = "";
+
+    void onclick()
+    {
+        // Lấy query parameters từ URL hiện tại
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+        var queryParams = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+
+        // Lấy giá trị của query parameters
+        if (queryParams.TryGetValue("userId", out var userIdValue))
+        {
+            userId = userIdValue;
+        }
+
+        if (queryParams.TryGetValue("postId", out var postIdValue))
+        {
+            postId = postIdValue;
+        }
+
+    }
+
+
+}

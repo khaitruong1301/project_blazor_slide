@@ -29,9 +29,16 @@ namespace blazor_soan_slide
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-            
-            //Thêm http client vào service
-            services.AddHttpClient();
+            // //Thêm http client vào service
+            // services.AddHttpClient();
+
+            // Thêm HttpClient với cấu hình cơ bản (với các tham số mặc định)
+            services.AddHttpClient("myClient", client =>
+            {
+                client.BaseAddress = new Uri("https://apistore.cybersoft.edu.vn/api/");
+                client.Timeout = TimeSpan.FromSeconds(30);
+                client.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
