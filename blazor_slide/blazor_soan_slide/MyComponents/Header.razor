@@ -8,21 +8,23 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <NavLink class="nav-link active" href="/" aria-current="page" activeClass="active" Match="NavLinkMatch.All">Home</NavLink>
+                <NavLink class="nav-link active" href="/" aria-current="page" activeClass="active"
+                    Match="NavLinkMatch.All">Home</NavLink>
             </li>
             <li class="nav-item">
-                <NavLink class="nav-link" href="/register" activeClass="active" Match="NavLinkMatch.Prefix">Register</NavLink>
+                <NavLink class="nav-link" href="/register" activeClass="active" Match="NavLinkMatch.Prefix">Register
+                </NavLink>
             </li>
             <li class="nav-item">
                 <NavLink class="nav-link" href="/login" activeClass="active">Login</NavLink>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <NavLink class="nav-link" href="/about" activeClass="active">about</NavLink>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <NavLink class="nav-link" href="/databinding" activeClass="active">databinding</NavLink>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                 <NavLink class="nav-link" href="/FetchingDataApi" activeClass="active">FetchingDataApi</NavLink>
             </li>
             <li class="nav-item dropdown">
@@ -34,7 +36,7 @@
                 </div>
             </li>
         </ul>
-        <EditForm class="d-flex my-2 my-lg-0"  EditContext="editContext" OnSubmit="HandleSubmit">
+        <EditForm class="d-flex my-2 my-lg-0" EditContext="editContext" OnSubmit="HandleSubmit">
             <input class="form-control me-sm-2" type="text" placeholder="Search" @bind-value="keyword" />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                 Search
@@ -44,16 +46,18 @@
 </nav>
 
 
-@code{ 
-    private string keyword {get;set;}
-     private EditContext editContext;
+@code {
+    private string keyword { get; set; }
+    private EditContext editContext;
 
     protected override void OnInitialized()
     {
         // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
         editContext = new EditContext(new object());
     }
-    private async Task HandleSubmit(){
-        Navigation.NavigateTo($"/search?k={keyword}");  
+    
+    private async Task HandleSubmit()
+    {
+        Navigation.NavigateTo($"/search?k={keyword}");
     }
 }
