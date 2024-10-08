@@ -1,0 +1,111 @@
+@page "/person"
+
+<div class="card">
+    <img src="@ps.ImgUrl" alt="..." height="150" />
+    <div class="card-body">
+        <h3>Name: @ps.Name</h3>
+        <p>Age: @ps.Age</p>
+        <button class="btn btn-primary me-2" @onclick="()=>handleVote(true)">@ps.Like <i
+                class="fa fa-thumbs-up"></i></button>
+        <button class="btn btn-dark ms-2" @onclick="()=>handleVote(false)">@ps.Dislike <i
+                class="fa fa-thumbs-down"></i></button>
+    </div>
+       <button class="btn btn-danger mt-2" @onclick="random">Random</button>
+</div>
+
+@code {
+    // Tạo danh sách chứa các đối tượng
+    public List<Person> people = new List<Person> {
+            new Person
+            {
+                Id = 1,
+                Name = "Alice",
+                Like = 100,
+                Dislike = 20,
+                ImgUrl = "https://i.pravatar.cc?u=alice",
+                Age = 28.5,
+                Description = "Alice is a software developer with 5 years of experience in C#."
+            },
+            new Person
+            {
+                Id = 2,
+                Name = "Bob",
+                Like = 150,
+                Dislike = 30,
+                ImgUrl = "https://i.pravatar.cc?u=bob",
+                Age = 35.0,
+                Description = "Bob is a project manager who loves organizing and coordinating."
+            },
+            new Person
+            {
+                Id = 3,
+                Name = "Charlie",
+                Like = 75,
+                Dislike = 10,
+                ImgUrl = "https://i.pravatar.cc?u=charlie",
+                Age = 22.8,
+                Description = "Charlie is a junior developer passionate about front-end technologies."
+            },
+            new Person
+            {
+                Id = 4,
+                Name = "David",
+                Like = 90,
+                Dislike = 15,
+                ImgUrl = "https://i.pravatar.cc?u=david",
+                Age = 30.2,
+                Description = "David is a DevOps engineer experienced with cloud infrastructures."
+            },
+            new Person
+            {
+                Id = 5,
+                Name = "Eva",
+                Like = 200,
+                Dislike = 40,
+                ImgUrl = "https://i.pravatar.cc?u=eva",
+                Age = 27.1,
+                Description = "Eva is a data scientist with a strong background in machine learning."
+            }
+        };
+    public Person ps = new Person();
+    public void handleVote(bool value)
+    {
+        if (value)
+        {
+            ps.Like += 1;
+        }
+        else
+        {
+            ps.Dislike += 1;
+        }
+    }
+
+    public void random()
+    {
+        Random random = new Random();
+        int indexRandom = random.Next(5);
+        ps = people[indexRandom];
+
+
+        StateHasChanged(); // Gọi phương thức này để cập nhật lại UI sau khi thay đổi dữ liệu
+
+    
+    }
+
+
+
+    public class Person
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Like { get; set; }
+        public int Dislike { get; set; }
+        public string ImgUrl { get; set; } = "https://i.pravatar.cc?u=1";
+        public double Age { get; set; }
+        public string Description { get; set; }
+    }
+
+
+   
+       
+}
