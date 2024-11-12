@@ -1,0 +1,90 @@
+@page "/crypto"
+@using Newtonsoft.Json
+@inject CryptoService CryptoService
+
+<h2>Crypto Portfolio</h2>
+
+<div class="container py-4">
+    <div class="row">
+        <!-- All Cryptocurrencies Section -->
+        <div class="col-md-6">
+            <h5>All Cryptocurrencies</h5>
+            @if (Cryptocurrencies == null)
+            {
+                <p>Loading...</p>
+            }
+            else
+            {
+                @foreach (var crypto in Cryptocurrencies)
+                {
+                    {
+                        string json = JsonConvert.SerializeObject(crypto, Formatting.Indented);
+                        Console.WriteLine(json);
+                    }
+                    
+                    <div class="crypto-item d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="@crypto.Image" 
+                                 alt="@crypto.Name" class="crypto-icon" width="50" height="50"/>
+                            @crypto.Name
+                        </div>
+                        <span>USD @crypto.CurrentPrice</span>
+                        <button class="btn btn-primary btn-sm" @onclick="() => AddToFavorites(crypto)">Add to Favorites</button>
+                    </div>
+                }
+            }
+        </div>
+
+        <!-- Favorites Section -->
+        <div class="col-md-6">
+            <h5>Your Favorites</h5>
+            <div class="favorites-section">
+                @if (Favorites.Any())
+                {
+                    @foreach (var favorite in Favorites)
+                    {
+                        <div class="crypto-item d-flex align-items-center justify-content-between">
+                            <div>
+                                <img src="@favorite.Image" 
+                                     alt="@favorite.Name" class="crypto-icon" width="50"/>
+                                @favorite.Name
+                            </div>
+                            <span>USD @favorite.CurrentPrice</span>
+                            <button class="btn btn-link text-danger" @onclick="() => RemoveFromFavorites(favorite)">Remove</button>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No favorites selected.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    @* using System.Runtime.InteropServices; *@
+
+    private List<CryptoData> Cryptocurrencies { get; set; }
+    private List<CryptoData> Favorites { get; set; } = new List<CryptoData>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch data from the CryptoService
+        Cryptocurrencies = await CryptoService.GetCryptoDataAsync();
+    }
+
+    private void AddToFavorites(CryptoData crypto)
+    {
+        if (!Favorites.Contains(crypto))
+        {
+            Favorites.Add(crypto);
+        }
+    }
+
+    private void RemoveFromFavorites(CryptoData crypto)
+    {
+        Favorites.Remove(crypto);
+    }
+}

@@ -36,6 +36,7 @@ namespace blazor_soan_slide
             // Đăng ký CountService dưới dạng Scoped
             services.AddScoped<CountService>();
             services.AddScoped<CartService>();
+            services.AddScoped<CryptoService>();
 
 
 

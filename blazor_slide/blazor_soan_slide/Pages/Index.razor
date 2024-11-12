@@ -1,4 +1,4 @@
-﻿@* @page "/"
+﻿@page "/"
 @layout HomePageMaster
 
 <div class="container ">
@@ -22,10 +22,10 @@
 @code {
     private ProductCardModel productDetail = new ProductCardModel();
     private List<ProductCardModel> lstProd = new List<ProductCardModel>(){
-        new ProductCardModel { id = 1, name = "iphone", price = 1000 },
-        new ProductCardModel { id = 2, name = "iphone1", price = 2000 },
-        new ProductCardModel { id = 3, name = "iphone2", price = 3000 },
-        new ProductCardModel { id = 4, name = "iphone3", price = 4000 },
+        new ProductCardModel { Id = 1, Name = "iphone", Price = 1000 },
+        new ProductCardModel { Id = 2, Name = "iphone1", Price = 2000 },
+        new ProductCardModel { Id = 3, Name = "iphone2", Price = 3000 },
+        new ProductCardModel { Id = 4, Name = "iphone3", Price = 4000 },
     };
     private void HandleChildClick(ProductCardModel prodClick)
     {
@@ -36,9 +36,9 @@
 
 
 
-    private ProductCardModel prod = new ProductCardModel() { id = 1, name = "iphone", price = 1000 };
+    private ProductCardModel prod = new ProductCardModel() { Id = 1, Name = "iphone", Price = 1000 };
 
 }
 
 
- *@
+
