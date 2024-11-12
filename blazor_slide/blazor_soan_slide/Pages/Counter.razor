@@ -1,0 +1,30 @@
+@page "/counter"
+@inject CountService CountService
+<div class="container">
+    <h3>Counter Component</h3>
+    <p>Current Count: @CountService.Count</p>
+    <button @onclick="IncreaseCount">Increase</button>
+    <button @onclick="DecreaseCount">Decrease</button>
+</div>
+@code {
+    protected override void OnInitialized()
+    {
+        // Đăng ký sự kiện OnChange để cập nhật UI khi số lượng thay đổi
+        CountService.OnChange += StateHasChanged;
+    }
+    private void IncreaseCount()
+    {
+        CountService.Increase();
+    }
+    private void DecreaseCount()
+    {
+        CountService.Decrease();
+    }
+    public void Dispose()
+    {
+        // Hủy đăng ký sự kiện khi component bị dispose để tránh rò rỉ bộ nhớ
+        CountService.OnChange -= StateHasChanged;
+    }
+}
+
+

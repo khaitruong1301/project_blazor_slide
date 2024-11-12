@@ -1,0 +1,65 @@
+@page "/product-page"
+@inject HttpClient Http
+@layout HomePageMaster
+@inject CartService _cartService;
+
+
+<div class="container">
+    <h3>Product list</h3>
+    <button class="btn btn-dark" @onclick="GetItems">Get</button>
+    <div class="row">
+        @foreach (var item in items)
+        {
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <img src="@item.Image" alt="@item.Alias" />
+                    <div class="card-body">
+                        <h3>@item.Name</h3>
+                        <p>@item.Price</p>
+                        <a href="/detail/@item.Id" class="btn btn-dark">Detail</a>
+
+                        <button class="btn btn-dark" @onclick="(e)=>AddToCart(item)">
+                            Add to cart
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@code {
+
+    private IEnumerable<ProductModel> items = new List<ProductModel>();
+    protected override void OnInitialized()
+    {
+        // Đăng ký sự kiện OnChange để cập nhật UI khi số lượng thay đổi
+        _cartService.OnChange += StateHasChanged;
+    }
+    private async Task GetItems()
+    {
+        // Gửi yêu cầu GET đến API
+        var response = await
+        Http.GetFromJsonAsync<HttpResponse<ProductModel[]>>("https://apistore.cybersoft.edu.vn/api/Product");
+        items = response.content;
+    }
+
+    private void AddToCart(ProductModel newProduct)
+    {
+        ProductCartModel prodModel = new ProductCartModel(){
+            Id = newProduct.Id,
+            Name = newProduct.Name,
+            Image = newProduct.Image,
+            Price = newProduct.Price,
+            Quantity = 1
+        };
+        _cartService.AddToCart(prodModel);
+    }
+
+    protected void Dispose()
+    {
+        // Đăng ký sự kiện OnChange để cập nhật UI khi số lượng thay đổi
+        _cartService.OnChange -= StateHasChanged;
+    }
+
+}

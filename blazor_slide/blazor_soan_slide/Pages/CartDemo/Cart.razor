@@ -1,0 +1,63 @@
+@page "/cart"
+@inject CartService _cartService
+@layout HomePageMaster;
+
+<div class="container">
+    <h3>Product list</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Img</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in _cartService.CartModel.ProductCartList)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td><img src="@item.Image" alt="@item.Name" width="50" height="50" /> </td>
+                    <td>@item.Price</td>
+                    <td>
+                        <button class="btn btn-danger me-2">+</button>
+                        @item.Quantity
+                        <button class="btn btn-danger ms-2">+</button>
+                    </td>
+                    <td>@(item.Quantity * item.Price)</td>
+                    <td>
+                        <button class="btn btn-danger ml-2" @onclick="() => RemoveItem(item.Id)">Del</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Đăng ký sự kiện OnChange để cập nhật UI khi giỏ hàng thay đổi
+        _cartService.OnChange += StateHasChanged;
+    }
+
+    private void RemoveItem(int productId)
+    {
+        // Gọi phương thức xóa sản phẩm từ CartService
+        _cartService.DeleteProduct(productId);
+
+        // Cập nhật giao diện sau khi xóa
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        // Hủy đăng ký sự kiện khi component bị dispose để tránh rò rỉ bộ nhớ
+        _cartService.OnChange -= StateHasChanged;
+    }
+}

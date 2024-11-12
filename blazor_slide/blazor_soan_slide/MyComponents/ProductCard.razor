@@ -1,14 +1,14 @@
 <div class="card">
-    <img style="height: 250px;" src="https://picsum.photos/id/@prod.id/300/300" alt="..." />
+    <img style="height: 250px;" src="https://picsum.photos/id/@prod.Id/300/300" alt="..." />
     <div class="card-body border-success border-1 shadow shadow-lg ">
-        <h3>@prod.name</h3>
-        <p>Price: @prod.price</p>
+        <h3>@prod.Name</h3>
+        <p>Price: @prod.Price</p>
         <button class="btn btn-dark" @onclick="() => handleClick(prod)">Detail</button>
     </div>
 </div>
 
 @code {
-    @using System.Text.Json
+    @using System.Text.Json;
     [Parameter]
     public ProductCardModel prod { get; set; }
     [Parameter]

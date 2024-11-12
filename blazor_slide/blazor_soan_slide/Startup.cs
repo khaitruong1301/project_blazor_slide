@@ -32,6 +32,13 @@ namespace blazor_soan_slide
             // //Thêm http client vào service
             // services.AddHttpClient();
 
+            
+            // Đăng ký CountService dưới dạng Scoped
+            services.AddScoped<CountService>();
+            services.AddScoped<CartService>();
+
+
+
             // Thêm HttpClient với cấu hình cơ bản (với các tham số mặc định)
             services.AddHttpClient("myClient", client =>
             {
@@ -39,6 +46,11 @@ namespace blazor_soan_slide
                 client.Timeout = TimeSpan.FromSeconds(30);
                 client.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
             });
+
+
+
+     
+
 
         }
 
