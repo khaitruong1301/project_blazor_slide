@@ -1,0 +1,45 @@
+@code {
+    [Parameter]
+    public int CounterValue { get; set; }
+
+    // Biến đếm số lần tham số thay đổi
+    private int parameterChanges = 0;
+
+    // OnInitialized chạy một lần khi component được khởi tạo
+    protected override void OnInitialized()
+    {
+        Console.WriteLine("ChildComponent - OnInitialized: Khởi tạo component con.");
+    }
+
+    // OnParametersSet - Chạy khi tham số được cập nhật
+    protected override void OnParametersSet()
+    {
+        parameterChanges++;
+        Console.WriteLine($"ChildComponent - OnParametersSet: CounterValue thay đổi. Số lần thay đổi: {parameterChanges}");
+    }
+
+    // ShouldRender - Quyết định render lại khi tham số thay đổi (chỉ render khi CounterValue là số chẵn)
+    protected override bool ShouldRender()
+    {
+        return CounterValue % 2 == 0;
+    }
+
+    // OnAfterRender - Chạy sau khi render
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Console.WriteLine("ChildComponent - OnAfterRender: Render lần đầu.");
+        }
+    }
+
+    // Dispose - Giải phóng tài nguyên khi component bị hủy
+    public void Dispose()
+    {
+        Console.WriteLine("ChildComponent - Dispose: Giải phóng tài nguyên của component con.");
+    }
+}
+
+<h4>Child Component</h4>
+<p>Giá trị Counter từ ParentComponent: @CounterValue</p>
+<p>Số lần CounterValue thay đổi: @parameterChanges</p>

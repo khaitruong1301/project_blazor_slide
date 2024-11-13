@@ -33,6 +33,10 @@
             <li class="nav-item">
                 <NavLink class="nav-link" href="/cart" activeClass="active">cart</NavLink>
             </li>
+            <li class="nav-item">
+                <NavLink class="nav-link" href="/lifecycle" activeClass="active">lifecycle</NavLink>
+            </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -61,7 +65,7 @@
         // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
         editContext = new EditContext(new object());
     }
-    
+
     private async Task HandleSubmit()
     {
         Navigation.NavigateTo($"/search?k={keyword}");
