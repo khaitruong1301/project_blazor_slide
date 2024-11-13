@@ -1,8 +1,100 @@
+@page "/lifecycle"
+@using System.Threading
+@layout HomePageMaster
 
-@page "/LifeCycle"
+@implements IDisposable
+@inject IJSRuntime JS
 
+<h3>Parent Component</h3>
 
+<button @onclick="IncrementCounter">Tăng Counter</button>
+<p>Giá trị Counter: @counter</p>
+
+<ChildComponent CounterValue="counter" />
 
 @code {
+    // Biến đếm (counter) sẽ được truyền vào ChildComponent
+    private int counter = 0;
 
+    // Biến kiểm tra render lần đầu
+    private bool isFirstRender = true;
+
+    // Khởi tạo timer
+    private Timer timer;
+
+    // Tăng giá trị counter
+    private void IncrementCounter()
+    {
+        counter++;
+    }
+
+    // OnInitialized chạy một lần khi component được khởi tạo
+    protected override void OnInitialized()
+    {
+        Console.WriteLine("OnInitialized - Khởi tạo component");
+        timer = new Timer(OnTimerElapsed, null, 0, 2000); // Timer tick mỗi 2 giây
+    }
+
+    // OnInitializedAsync - Khởi tạo bất đồng bộ (ví dụ, tải dữ liệu từ API)
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("OnInitializedAsync - Tải dữ liệu ban đầu");
+        await Task.Delay(500); // Giả lập tải dữ liệu
+    }
+
+    // OnParametersSet - Chạy mỗi khi có thay đổi trong tham số của component
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine("OnParametersSet - Cập nhật tham số");
+    }
+
+    // SetParametersAsync - Tùy chỉnh xử lý tham số bất đồng bộ
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        await base.SetParametersAsync(parameters);
+        Console.WriteLine("SetParametersAsync - Xử lý tham số bất đồng bộ");
+    }
+
+    // ShouldRender - Quyết định có cần render lại không
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine("ShouldRender - Kiểm tra có cần render lại không");
+        return true; // Luôn render lại để theo dõi cập nhật counter
+    }
+
+    // OnAfterRender - Chạy sau khi component render xong
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine("OnAfterRender - Component render hoàn tất");
+
+        if (firstRender)
+        {
+            Console.WriteLine("OnAfterRender - Đây là render lần đầu");
+            isFirstRender = false;
+        }
+    }
+
+    // OnAfterRenderAsync - Chạy sau khi render cho các tác vụ bất đồng bộ
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            Console.WriteLine("OnAfterRenderAsync - Chạy tác vụ async sau render lần đầu");
+            await Task.Delay(1000); // Giả lập tác vụ async
+        }
+    }
+
+    // Sự kiện Timer tick mỗi 2 giây
+    private void OnTimerElapsed(object state)
+    {
+        counter++;
+        InvokeAsync(StateHasChanged); // Cập nhật UI khi counter thay đổi
+    }
+
+    // Dispose - Giải phóng tài nguyên khi component bị hủy
+    public void Dispose()
+    {
+        timer?.Dispose();
+        Console.WriteLine("Dispose - Giải phóng tài nguyên (timer)");
+    }
 }

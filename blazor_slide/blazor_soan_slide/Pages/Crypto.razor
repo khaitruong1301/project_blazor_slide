@@ -1,5 +1,7 @@
 @page "/crypto"
 @using Newtonsoft.Json
+@using System.Text.Json.Serialization
+@using System.Xml
 @inject CryptoService CryptoService
 
 <h2>Crypto Portfolio</h2>
@@ -18,7 +20,7 @@
                 @foreach (var crypto in Cryptocurrencies)
                 {
                     {
-                        string json = JsonConvert.SerializeObject(crypto, Formatting.Indented);
+                        string json = JsonConverter.SerializeObject(crypto, Formatting.Indented);
                         Console.WriteLine(json);
                     }
                     
