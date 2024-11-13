@@ -1,0 +1,53 @@
+@page "/demoapi"
+@inject HttpClient Http
+@layout HomePageMaster;
+<div class="container">
+    <h3>Danh sách sản phẩm</h3>
+    @if (arrProduct == null)
+    {
+        <p><em>Đang tải...</em></p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>name</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in arrProduct)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>
+                            <img src="@item.Image" alt="..." width="50" height="50" />
+                        </td>
+                        <td>@item.Price</td>
+                        <td></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+
+
+
+@code {
+    private ProductModel[]? arrProduct;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await
+        Http.GetFromJsonAsync<HttpResponse<ProductModel[]>>("https://apistore.cybersoft.edu.vn/api/Product");
+        arrProduct = response.content;
+    }
+
+
+}

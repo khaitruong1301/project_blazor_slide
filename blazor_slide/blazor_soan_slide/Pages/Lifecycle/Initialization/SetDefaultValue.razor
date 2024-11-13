@@ -1,0 +1,88 @@
+@page "/new-task"
+@inject NavigationManager Navigation
+
+
+
+<div class="container">
+    <h3>Create New Task</h3>
+
+    @if (isLoading)
+    {
+        <p>Loading categories and priorities...</p>
+    }
+    else if (errorMessage != null)
+    {
+        <p style="color: red;">Error: @errorMessage</p>
+    }
+    else
+    {
+        <label>Task Name:</label>
+        <input type="text" @bind="TaskName" />
+
+        <label>Category:</label>
+        <select @bind="SelectedCategory">
+            @foreach (var category in Categories)
+            {
+                <option value="@category">@category</option>
+            }
+        </select>
+
+        <label>Priority:</label>
+        <select @bind="SelectedPriority">
+            @foreach (var priority in Priorities)
+            {
+                <option value="@priority">@priority</option>
+            }
+        </select>
+
+        <button @onclick="SaveTask">Save Task</button>
+    }
+</div>
+@code {
+    // Các thuộc tính để lưu thông tin công việc
+    private string TaskName;
+    private string SelectedCategory;
+    private string SelectedPriority;
+
+    private List<string> Categories = new();
+    private List<string> Priorities = new();
+
+    private bool isLoading = true; // Trạng thái loading
+    private string errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Đọc tệp JSON từ wwwroot
+            var httpClient = new HttpClient { BaseAddress = new Uri(Navigation.BaseUri) };
+            var response = await httpClient.GetFromJsonAsync<TaskDefaults>("task-defaults.json");
+
+            // Thiết lập các giá trị mặc định
+            Categories = response.Categories;
+            Priorities = response.Priorities;
+            SelectedCategory = Categories.FirstOrDefault();
+            SelectedPriority = Priorities.FirstOrDefault();
+
+            isLoading = false;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+            isLoading = false;
+        }
+    }
+
+    // Lớp ánh xạ với dữ liệu JSON từ tệp
+    public class TaskDefaults
+    {
+        public List<string> Categories { get; set; }
+        public List<string> Priorities { get; set; }
+    }
+
+    private void SaveTask()
+    {
+        // Thực hiện lưu công việc
+        Console.WriteLine($"Task Saved: {TaskName}, {SelectedCategory}, {SelectedPriority}");
+    }
+}

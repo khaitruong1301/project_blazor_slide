@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DRd6FxeW9NqjXEZKJYW8mh0kDQyrk6FnuFHIZm0MuAU=",
+  "Hash": "uXsZvzGLqStKOSTkpDykVZBjVQzJWfhg5eZgHcde4JY=",
   "Source": "blazor_soan_slide",
   "BasePath": "_content/blazor_soan_slide",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\task-defaults.json",
+      "SourceId": "blazor_soan_slide",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "BasePath": "_content/blazor_soan_slide",
+      "RelativePath": "task-defaults.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\task-defaults.json"
     }
   ]
 }

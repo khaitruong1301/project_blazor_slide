@@ -94,6 +94,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/DemoApi.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXEluaXRpYWxpemF0aW9uXERlbW9BcGkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/SetDefaultValue.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXEluaXRpYWxpemF0aW9uXFNldERlZmF1bHRWYWx1ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

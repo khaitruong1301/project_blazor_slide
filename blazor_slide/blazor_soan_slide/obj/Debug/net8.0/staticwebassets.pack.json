@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\task-defaults.json",
+      "PackagePath": "staticwebassets\\task-defaults.json"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.blazor_soan_slide.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
