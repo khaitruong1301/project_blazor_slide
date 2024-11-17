@@ -9,127 +9,135 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = blazor_soan_slide
 build_property.RootNamespace = blazor_soan_slide
-build_property.ProjectDir = D:\slidedotnet\project_blazor_slide\blazor_slide\blazor_soan_slide\
+build_property.ProjectDir = /Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\slidedotnet\project_blazor_slide\blazor_slide\blazor_soan_slide
+build_property.MSBuildProjectDirectory = /Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/App.razor]
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Children.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXENoaWxkcmVuLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Children.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL0NoaWxkcmVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Header.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXEhlYWRlci5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL0hlYWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Modal.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXE1vZGFsLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Modal.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL01vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Parent.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFBhcmVudC5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Parent.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL1BhcmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/PersonComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFBlcnNvbkNvbXBvbmVudC5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/PersonComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL1BlcnNvbkNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/ProductCard.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFByb2R1Y3RDYXJkLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/ProductCard.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL1Byb2R1Y3RDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/TableDetail.razor]
-build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFRhYmxlRGV0YWlsLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/TableDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzL1RhYmxlRGV0YWlsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/About.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/Cart.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydERlbW9cQ2FydC5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FydERlbW8vQ2FydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/ProductPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydERlbW9cUHJvZHVjdFBhZ2UucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FydERlbW8vUHJvZHVjdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/ChildComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpbGRDb21wb25lbnQucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/ChildComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hpbGRDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Crypto.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3J5cHRvLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Crypto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3J5cHRvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/DataBinding.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YUJpbmRpbmcucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/DataBinding.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGF0YUJpbmRpbmcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Detail.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Detail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWlsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/EditUser.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXIucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/EditUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/FetchingDataApi.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hpbmdEYXRhQXBpLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/FetchingDataApi.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hpbmdEYXRhQXBpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/LifeCycle.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/LifeCycle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/DemoApi.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXEluaXRpYWxpemF0aW9uXERlbW9BcGkucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/DemoApi.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL0luaXRpYWxpemF0aW9uL0RlbW9BcGkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/SetDefaultValue.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXEluaXRpYWxpemF0aW9uXFNldERlZmF1bHRWYWx1ZS5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/SetDefaultValue.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL0luaXRpYWxpemF0aW9uL1NldERlZmF1bHRWYWx1ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/ChildProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1NldFBhcmFtZXRlcnNBc3luYy9DaGlsZFByb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/RefDemo.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmRGVtby5yYXpvcg==
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/DemoSetParam.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1NldFBhcmFtZXRlcnNBc3luYy9EZW1vU2V0UGFyYW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Register.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Search.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/RefDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVmRGVtby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Shared/HomePageMaster.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhvbWVQYWdlTWFzdGVyLnJhem9y
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/_Imports.razor]
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VhcmNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Shared/HomePageMaster.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0hvbWVQYWdlTWFzdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

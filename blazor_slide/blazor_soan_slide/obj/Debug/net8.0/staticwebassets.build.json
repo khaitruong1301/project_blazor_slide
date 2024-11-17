@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "uXsZvzGLqStKOSTkpDykVZBjVQzJWfhg5eZgHcde4JY=",
-=======
-  "Hash": "eD0hn1zBMCyGPT3WMXPmdjOF5hX4zS+DoptT9LzCOyY=",
->>>>>>> 8992c779ceb83b3c7a24906186c142043e5845f8
+  "Hash": "3Kx4qkjzbhZnJVHqumyZxcD/M5m6FkuKtJgTEt7LiYw=",
   "Source": "blazor_soan_slide",
   "BasePath": "_content/blazor_soan_slide",
   "Mode": "Default",
@@ -14,17 +10,17 @@
     {
       "Name": "blazor_soan_slide/wwwroot",
       "Source": "blazor_soan_slide",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -40,10 +36,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -59,10 +55,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -78,10 +74,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -97,10 +93,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -116,10 +112,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -135,10 +131,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -154,10 +150,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -173,10 +169,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -192,10 +188,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -211,10 +207,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/README.md",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/README.md",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -230,10 +226,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/site.css",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/site.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -249,10 +245,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/favicon.ico",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/favicon.ico",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -265,14 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\task-defaults.json",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/task-defaults.json",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "task-defaults.json",
       "AssetKind": "All",
@@ -285,10 +280,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\task-defaults.json"
-=======
-      "OriginalItemSpec": "wwwroot/favicon.ico"
->>>>>>> 8992c779ceb83b3c7a24906186c142043e5845f8
+      "OriginalItemSpec": "wwwroot/task-defaults.json"
     }
   ]
 }

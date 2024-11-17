@@ -37,6 +37,8 @@ namespace blazor_soan_slide
             services.AddScoped<CountService>();
             services.AddScoped<CartService>();
             services.AddScoped<CryptoService>();
+            services.AddScoped<ProductService>(); // Đăng ký ProductService
+
 
 
 

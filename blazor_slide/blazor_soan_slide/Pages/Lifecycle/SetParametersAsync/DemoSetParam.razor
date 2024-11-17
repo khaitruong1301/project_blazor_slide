@@ -1,0 +1,22 @@
+@page "/demo-setparam"
+
+
+<h3>Product Parent Component</h3>
+
+<label for="productIdInput">Enter Product ID:</label>
+<input id="productIdInput" type="number" @bind="ProductId" placeholder="Enter Product ID" />
+<button @onclick="LoadProduct">Load Product</button>
+
+<hr />
+
+<ChildProduct ProductId="ProductId" />
+
+@code {
+    private int ProductId { get; set; }
+
+    private void LoadProduct()
+    {
+        // Khi người dùng nhấn nút, component con sẽ nhận tham số ProductId mới
+        // Tham số này sẽ được truyền xuống ProductChild và kích hoạt SetParametersAsync
+    }
+}
