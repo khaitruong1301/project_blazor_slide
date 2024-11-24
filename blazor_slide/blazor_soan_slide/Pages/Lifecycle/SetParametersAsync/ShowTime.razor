@@ -1,0 +1,74 @@
+@using System.Text.Json
+@using static blazor_soan_slide.Pages.Lifecycle.SetParametersAsync.DemoSetParam
+@using static System.Net.WebRequestMethods
+@inject HttpClient Http
+<hr />
+<div class="container">
+    <h3>Show Time</h3>
+
+    <h3>@movie.Title</h3>
+    @foreach (var item in showTimes)
+    {
+        <div>
+            @foreach (var time in item.times)
+            {
+                <span class="badge bg-dark m-1">
+                    @time
+                </span>
+            }
+        </div>
+    }
+</div>
+
+
+@code {
+    [Parameter]
+    public Movie movie { get; set; } = new Movie();
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        await base.SetParametersAsync(parameters);
+        string json = JsonSerializer.Serialize(parameters);
+        Console.Write(json);
+        //Phần call api mỗi khi tham số thay đổi
+        await CallApi();
+    }
+    public IEnumerable<ShowTime_Model> showTimes { get; set; } = new List<ShowTime_Model>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        //Phần call api mỗi khi tham số thay đổi
+        await CallApi();
+    }
+
+
+    // Hàm call API
+    private async Task CallApi()
+    {
+        try
+        {
+            var response = await Http.GetStringAsync("data_showtime.json");
+            var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true // Không phân biệt chữ hoa/thường
+                };
+            var res = JsonSerializer.Deserialize<List<ShowTime_Model>>(response, options);
+
+            showTimes = res.Where(n => n.movieId == movie.Id).ToList();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+
+    public class ShowTime_Model
+    {
+        public int movieId { get; set; }
+        public string date { get; set; }
+        public string[] times { get; set; }
+
+    }
+
+
+  
+}

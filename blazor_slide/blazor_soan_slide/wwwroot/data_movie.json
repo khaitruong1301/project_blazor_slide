@@ -1,0 +1,18 @@
+[
+    {
+        "Id": 1,
+        "Title": "Dead pool 3",
+        "Image": "https://movienew.cybersoft.edu.vn/hinhanh/deadpool_gp01.jpg"
+
+    },
+    {
+        "Id": 2,
+        "Title": "Conan Thám Tử Lừng Danh",
+        "Image": "https://movienew.cybersoft.edu.vn/hinhanh/conan-5-canh_gp01.jpg"
+    },
+    {
+        "Id": 3,
+        "Title": "Linh Miêu: Quỷ Nhập Tràng",
+        "Image":"https://movienew.cybersoft.edu.vn/hinhanh/linh-mieu-quy-nhap-trang_gp01.jpg"
+    }
+]

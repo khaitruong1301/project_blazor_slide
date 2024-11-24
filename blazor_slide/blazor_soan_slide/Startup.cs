@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using blazor_soan_slide.Data;
+using System.Net.Http;
 
 namespace blazor_soan_slide
 {
@@ -32,13 +33,15 @@ namespace blazor_soan_slide
             // //Thêm http client vào service
             // services.AddHttpClient();
 
-            
+
             // Đăng ký CountService dưới dạng Scoped
             services.AddScoped<CountService>();
             services.AddScoped<CartService>();
             services.AddScoped<CryptoService>();
             services.AddScoped<ProductService>(); // Đăng ký ProductService
 
+
+ 
 
 
 
@@ -50,9 +53,13 @@ namespace blazor_soan_slide
                 client.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
             });
 
+            // Thêm HttpClient cho các yêu cầu nội bộ (truy cập wwwroot)
+            services.AddScoped(sp => new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:5001/") // Thay đổi cổng tùy vào cấu hình của bạn
+            });
 
 
-     
 
 
         }
@@ -70,7 +77,7 @@ namespace blazor_soan_slide
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

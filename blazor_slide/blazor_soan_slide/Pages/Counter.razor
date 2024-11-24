@@ -25,6 +25,14 @@
         // Hủy đăng ký sự kiện khi component bị dispose để tránh rò rỉ bộ nhớ
         CountService.OnChange -= StateHasChanged;
     }
+
+    @inject IJSRuntime JSRuntime
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initializeThirdPartyLibrary");
+        }
+    }
 }
-
-

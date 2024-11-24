@@ -1,22 +1,71 @@
 @page "/demo-setparam"
+@using System.Text.Json
+@inject HttpClient Http
+@layout HomePageMaster
 
+<div class="container">
+    <h1>Movie List</h1>
+    @if (movies == null)
+    {
+        <p>Loading movies...</p>
+    }
+    else if (movies.Count == 0)
+    {
+        <p>No movies found.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var movie in movies)
+            {
+                <div class="col-3 mt-2">
+                    <div class="card">
+                        <img src="@movie.Image" height="400" style="object-fit: cover;" alt="..." />
+                        <div class="card-body">
+                            <p>@movie.Title</p>
+                            <button class="btn btn-dark" @onclick="() => ShowDetails(movie)">Details</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
 
-<h3>Product Parent Component</h3>
+    <ShowTime movie="@movieDetail"  />
 
-<label for="productIdInput">Enter Product ID:</label>
-<input id="productIdInput" type="number" @bind="ProductId" placeholder="Enter Product ID" />
-<button @onclick="LoadProduct">Load Product</button>
-
-<hr />
-
-<ChildProduct ProductId="ProductId" />
+</div>
 
 @code {
-    private int ProductId { get; set; }
+    private List<Movie> movies = new List<Movie>();
+    
+    private Movie movieDetail = new Movie();
 
-    private void LoadProduct()
+    protected override async Task OnInitializedAsync()
     {
-        // Khi người dùng nhấn nút, component con sẽ nhận tham số ProductId mới
-        // Tham số này sẽ được truyền xuống ProductChild và kích hoạt SetParametersAsync
+        try
+        {
+            // Đọc tệp JSON từ wwwroot
+            var response = await Http.GetStringAsync("data_movie.json");
+            movies = JsonSerializer.Deserialize<List<Movie>>(response);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading movies: {ex.Message}");
+            movies = new List<Movie>(); // Khởi tạo danh sách trống nếu có lỗi
+        }
+    }
+
+    private void ShowDetails(Movie detail)
+    {
+        movieDetail = detail;
+     
+    }
+
+
+    public class Movie
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Image { get; set; }
     }
 }

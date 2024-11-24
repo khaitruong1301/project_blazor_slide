@@ -49,6 +49,14 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/data_movie.json",
+      "PackagePath": "staticwebassets/data_movie.json"
+    },
+    {
+      "Id": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/data_showtime.json",
+      "PackagePath": "staticwebassets/data_showtime.json"
+    },
+    {
       "Id": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

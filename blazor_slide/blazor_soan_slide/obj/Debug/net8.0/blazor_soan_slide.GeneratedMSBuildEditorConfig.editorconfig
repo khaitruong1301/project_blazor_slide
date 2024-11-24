@@ -106,12 +106,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL0luaXRpYWxpemF0aW9uL1NldERlZmF1bHRWYWx1ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/ChildProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1NldFBhcmFtZXRlcnNBc3luYy9DaGlsZFByb2R1Y3QucmF6b3I=
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/ChildComponentRendering.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1JlZGVyaW5nL0NoaWxkQ29tcG9uZW50UmVuZGVyaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/ParentComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1JlZGVyaW5nL1BhcmVudENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/StaticComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1JlZGVyaW5nL1N0YXRpY0NvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/DemoSetParam.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1NldFBhcmFtZXRlcnNBc3luYy9EZW1vU2V0UGFyYW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/ShowTime.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZWN5Y2xlL1NldFBhcmFtZXRlcnNBc3luYy9TaG93VGltZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Login.razor]

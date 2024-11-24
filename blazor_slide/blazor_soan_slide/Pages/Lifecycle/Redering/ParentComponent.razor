@@ -1,0 +1,44 @@
+@page "/parent-lifecycle"
+
+<div class="container mt-4">
+    <h2>Parent Component</h2>
+    <div class="row">
+        <!-- Static Card Component -->
+        <div class="col-md-4">
+            <StaticComponent />
+        </div>
+
+        <!-- Dynamic Notification List -->
+        <div class="col-md-8">
+            <ChildComponentRendering Notifications="@NotificationList" OnNotificationRemoved="HandleNotificationRemoved" />
+        </div>
+    </div>
+
+    <!-- Form to Add Notification -->
+    <div class="mt-3">
+        <div class="input-group">
+            <input type="text" class="form-control" @bind="NewNotification" placeholder="Enter a new notification" />
+            <button class="btn btn-primary" @onclick="AddNotification">Add Notification</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<string> NotificationList { get; set; } = new List<string> { "Welcome to the site!", "New updates available!" };
+    private string NewNotification { get; set; } = string.Empty;
+
+    private void AddNotification()
+    {
+        if (!string.IsNullOrWhiteSpace(NewNotification))
+        {
+            NotificationList.Add(NewNotification);
+            NewNotification = string.Empty;
+        }
+    }
+
+    private void HandleNotificationRemoved(string notification)
+    {
+        NotificationList.Remove(notification);
+        StateHasChanged();
+    }
+}
