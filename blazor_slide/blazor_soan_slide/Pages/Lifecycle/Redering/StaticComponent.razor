@@ -6,3 +6,12 @@
         <a href="#" class="card-link">Learn More</a>
     </div>
 </div>
+
+@code {
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        await base.SetParametersAsync(parameters);
+        Console.WriteLine("SetParametersAsync children");
+
+    }
+}

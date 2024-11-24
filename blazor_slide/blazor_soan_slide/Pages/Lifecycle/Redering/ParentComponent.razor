@@ -1,4 +1,5 @@
 @page "/parent-lifecycle"
+@layout HomePageMaster
 
 <div class="container mt-4">
     <h2>Parent Component</h2>
@@ -10,7 +11,7 @@
 
         <!-- Dynamic Notification List -->
         <div class="col-md-8">
-            <ChildComponentRendering Notifications="@NotificationList" OnNotificationRemoved="HandleNotificationRemoved" />
+            <ChildComponentRendering Notifications="@NotificationList"/>
         </div>
     </div>
 
@@ -21,12 +22,19 @@
             <button class="btn btn-primary" @onclick="AddNotification">Add Notification</button>
         </div>
     </div>
+
+    <br />
+    <br />
+    <button @onclick="ChangeCount">Render parent (@Count)</button>
 </div>
 
 @code {
+    private int Count {get;set;}
     private List<string> NotificationList { get; set; } = new List<string> { "Welcome to the site!", "New updates available!" };
     private string NewNotification { get; set; } = string.Empty;
-
+    private void ChangeCount() {
+        Count += 1;
+    }
     private void AddNotification()
     {
         if (!string.IsNullOrWhiteSpace(NewNotification))
@@ -41,4 +49,6 @@
         NotificationList.Remove(notification);
         StateHasChanged();
     }
+
+    
 }

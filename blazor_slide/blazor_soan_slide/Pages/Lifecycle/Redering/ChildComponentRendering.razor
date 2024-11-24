@@ -1,33 +1,28 @@
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+
+
 <div>
     <h5>Dynamic Notification List</h5>
-    @if (Notifications is not null && Notifications.Any())
-    {
-        <ul class="list-group">
-            @foreach (var notification in Notifications)
-            {
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    @notification
-                    <button class="btn btn-sm btn-danger" @onclick="() => RemoveNotification(notification)">Dismiss</button>
-                </li>
-            }
-        </ul>
-    }
-    else
-    {
-        <p class="text-muted">No notifications available.</p>
-    }
+    <Virtualize Items="@Notifications" Context="notification">
+        @{
+            Console.WriteLine("render list");
+        }
+        <div class="list-group-item d-flex justify-content-between align-items-center my-2 border border-1 p-2">
+            @notification
+            <button class="btn btn-sm btn-danger">Dismiss</button>
+        </div>
+    </Virtualize>
 </div>
+
+
+<p class="text-muted">No notifications available.</p>
+
 
 @code {
     [Parameter]
     public List<string>? Notifications { get; set; }
 
-    [Parameter]
-    public EventCallback<string> OnNotificationRemoved { get; set; }
 
-    private void RemoveNotification(string notification)
-    {
-        Notifications?.Remove(notification);
-        OnNotificationRemoved.InvokeAsync(notification);
-    }
+
+
 }
