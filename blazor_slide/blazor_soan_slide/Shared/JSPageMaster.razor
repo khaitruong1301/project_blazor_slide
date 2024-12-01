@@ -1,0 +1,86 @@
+@inherits LayoutComponentBase
+
+@namespace blazor_soan_slide.MyComponents
+@inject NavigationManager Navigation
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white">
+    <a class="navbar-brand" href="#">Cybersoft razor</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+      
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">using js</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <NavLink class="dropdown-item" href="/jspage">jspage</NavLink>
+                </div>
+            </li>
+
+
+        </ul>
+        <EditForm class="d-flex my-2 my-lg-0" EditContext="editContext" OnSubmit="HandleSubmit">
+            <input class="form-control me-sm-2" type="text" placeholder="Search" @bind-value="keyword" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </EditForm>
+    </div>
+</nav>
+
+
+<!-- Hiển thị nội dung của trang con -->
+<div class="main-content" style="min-height: 70vh; height: 100%;">
+    @Body
+</div>
+<footer class="bg-dark text-white mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <!-- Cột 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Email Us</a></li>
+                    <li><a href="#" class="text-white">Call Us: 123-456-7890</a></li>
+                    <li><a href="#" class="text-white">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-secondary text-center py-3">
+        <p class="mb-0">&copy; 2024 Your Website. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+@code {
+    private string keyword { get; set; }
+    private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
+        editContext = new EditContext(new object());
+    }
+
+    private async Task HandleSubmit()
+    {
+        Navigation.NavigateTo($"/search?k={keyword}");
+    }
+}

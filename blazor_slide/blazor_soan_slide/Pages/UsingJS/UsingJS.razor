@@ -1,0 +1,14 @@
+@page "/jspage"
+@layout JSPageMaster
+@inject IJSRuntime JS
+
+<div class="container mt-2">
+    <button @onclick="HandleClick">click</button>
+
+</div>
+@code{
+    private async Task HandleClick()
+    {
+        await JS.InvokeVoidAsync("showMessage", "Hello từ Blazor!");
+    }
+}
