@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using blazor_soan_slide.Data;
 using System.Net.Http;
+using System.IO;
 
 namespace blazor_soan_slide
 {
@@ -40,11 +41,6 @@ namespace blazor_soan_slide
             services.AddScoped<CryptoService>();
             services.AddScoped<ProductService>(); // Đăng ký ProductService
 
-
- 
-
-
-
             // Thêm HttpClient với cấu hình cơ bản (với các tham số mặc định)
             services.AddHttpClient("myClient", client =>
             {
@@ -58,10 +54,6 @@ namespace blazor_soan_slide
             {
                 BaseAddress = new Uri("https://localhost:5001/") // Thay đổi cổng tùy vào cấu hình của bạn
             });
-
-
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -91,3 +83,4 @@ namespace blazor_soan_slide
         }
     }
 }
+

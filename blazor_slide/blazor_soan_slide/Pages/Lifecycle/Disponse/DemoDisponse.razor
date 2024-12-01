@@ -1,0 +1,34 @@
+@page "/demo-disponse"
+@using System.Threading
+@implements IDisposable
+@layout HomePageMaster
+<h3>Timer Example with Dispose</h3>
+<p>Time elapsed: @elapsedSeconds seconds</p>
+@code {
+    private Timer? timer;
+    private int elapsedSeconds = 0;
+
+    protected override void OnInitialized()
+    {
+        // Tạo timer chạy mỗi 1 giây
+        timer = new Timer((state) =>
+        {
+            elapsedSeconds++;
+            InvokeAsync(StateHasChanged); // Cập nhật giao diện
+        }, null, 0, 1000);
+    }
+
+    public void Dispose()
+    {
+        // Hủy timer để tránh tiếp tục chạy khi component bị hủy
+        timer?.Dispose();
+        Console.WriteLine("Timer disposed!");
+    }
+}
+
+
+
+
+
+
+

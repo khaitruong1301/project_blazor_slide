@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj": {}
+    "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj": {}
   },
   "projects": {
-    "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj": {
+    "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj",
+        "projectUniqueName": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj",
         "projectName": "blazor_soan_slide",
-        "projectPath": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj",
-        "packagesPath": "C:\\Users\\TGC\\.nuget\\packages\\",
-        "outputPath": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\obj\\",
+        "projectPath": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj",
+        "packagesPath": "/Users/khai/.nuget/packages/",
+        "outputPath": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\TGC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/khai/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +43,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
+            "LibSassHost": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
             "Microsoft.Identity.Web": {
               "target": "Package",
               "version": "[1.*, )"
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

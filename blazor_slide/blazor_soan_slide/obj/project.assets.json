@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AdvancedStringBuilder/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.6.0": {
         "type": "package",
         "dependencies": {
@@ -80,6 +93,28 @@
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BuildBundlerMinifier/3.2.449": {
+        "type": "package",
+        "build": {
+          "build/BuildBundlerMinifier.targets": {}
+        }
+      },
+      "LibSassHost/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/LibSassHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/LibSassHost.dll": {
             "related": ".xml"
           }
         }
@@ -985,6 +1020,28 @@
     }
   },
   "libraries": {
+    "AdvancedStringBuilder/0.1.1": {
+      "sha512": "32IrlspOA59ewotQ4tlKP27QhKxMKGB7oncqlwVHn/hAz+j/r3HvLr6/W9ni9Mnyktlcg6kt7QZS8rEgur1+4Q==",
+      "type": "package",
+      "path": "advancedstringbuilder/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "advancedstringbuilder.0.1.1.nupkg.sha512",
+        "advancedstringbuilder.nuspec",
+        "icon.png",
+        "lib/net40-client/AdvancedStringBuilder.dll",
+        "lib/net40-client/AdvancedStringBuilder.xml",
+        "lib/net45/AdvancedStringBuilder.dll",
+        "lib/net45/AdvancedStringBuilder.xml",
+        "lib/netstandard1.0/AdvancedStringBuilder.dll",
+        "lib/netstandard1.0/AdvancedStringBuilder.xml",
+        "lib/netstandard2.0/AdvancedStringBuilder.dll",
+        "lib/netstandard2.0/AdvancedStringBuilder.xml",
+        "readme.txt"
+      ]
+    },
     "Azure.Core/1.6.0": {
       "sha512": "kI4m2NsODPOrxo0OoKjk6B3ADbdovhDQIEmI4039upjjZKRaewVLx/Uz4DfRa/NtnIRZQPUALe1yvdHWAoRt4w==",
       "type": "package",
@@ -1049,6 +1106,62 @@
         "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll",
         "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.xml",
         "pkgicon.png"
+      ]
+    },
+    "BuildBundlerMinifier/3.2.449": {
+      "sha512": "uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
+      "type": "package",
+      "path": "buildbundlerminifier/3.2.449",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/BuildBundlerMinifier.targets",
+        "buildbundlerminifier.3.2.449.nupkg.sha512",
+        "buildbundlerminifier.nuspec",
+        "tools/net46/BundlerMinifier.dll",
+        "tools/net46/NUglify.dll",
+        "tools/net46/Newtonsoft.Json.dll",
+        "tools/netcoreapp2.0/BundlerMinifier.dll",
+        "tools/netcoreapp2.0/NUglify.dll",
+        "tools/netcoreapp2.0/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.0/BundlerMinifier.dll",
+        "tools/netcoreapp3.0/NUglify.dll",
+        "tools/netcoreapp3.0/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.1/BundlerMinifier.dll",
+        "tools/netcoreapp3.1/NUglify.dll",
+        "tools/netcoreapp3.1/Newtonsoft.Json.dll",
+        "tools/netstandard1.3/BundlerMinifier.dll",
+        "tools/netstandard1.3/NUglify.dll",
+        "tools/netstandard1.3/Newtonsoft.Json.dll"
+      ]
+    },
+    "LibSassHost/1.5.0": {
+      "sha512": "ymRT6y3rjy14xUU2Dl0HbG/TsSUyRNijUBDSCoTIx/zjczGTwxH9edTkZZxp9OF9uixb9BosGcaefNt+ajYx2w==",
+      "type": "package",
+      "path": "libsasshost/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "PACKAGE-DESCRIPTION.md",
+        "icon.png",
+        "lib/net40-client/LibSassHost.dll",
+        "lib/net40-client/LibSassHost.xml",
+        "lib/net45/LibSassHost.dll",
+        "lib/net45/LibSassHost.xml",
+        "lib/net471/LibSassHost.dll",
+        "lib/net471/LibSassHost.xml",
+        "lib/netstandard1.3/LibSassHost.dll",
+        "lib/netstandard1.3/LibSassHost.xml",
+        "lib/netstandard2.0/LibSassHost.dll",
+        "lib/netstandard2.0/LibSassHost.xml",
+        "lib/netstandard2.1/LibSassHost.dll",
+        "lib/netstandard2.1/LibSassHost.xml",
+        "libsass-license.txt",
+        "libsasshost.1.5.0.nupkg.sha512",
+        "libsasshost.nuspec",
+        "readme.txt"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.12": {
@@ -2579,38 +2692,32 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BuildBundlerMinifier >= 3.2.449",
+      "LibSassHost >= 1.5.0",
       "Microsoft.Identity.Web >= 1.*",
       "Microsoft.Identity.Web.UI >= 1.*",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TGC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/khai/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj",
+      "projectUniqueName": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj",
       "projectName": "blazor_soan_slide",
-      "projectPath": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\blazor_soan_slide.csproj",
-      "packagesPath": "C:\\Users\\TGC\\.nuget\\packages\\",
-      "outputPath": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\obj\\",
+      "projectPath": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/blazor_soan_slide.csproj",
+      "packagesPath": "/Users/khai/.nuget/packages/",
+      "outputPath": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\TGC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/khai/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2634,6 +2741,14 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "BuildBundlerMinifier": {
+            "target": "Package",
+            "version": "[3.2.449, )"
+          },
+          "LibSassHost": {
+            "target": "Package",
+            "version": "[1.5.0, )"
+          },
           "Microsoft.Identity.Web": {
             "target": "Package",
             "version": "[1.*, )"
@@ -2666,7 +2781,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

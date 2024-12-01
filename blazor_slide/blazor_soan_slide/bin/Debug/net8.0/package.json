@@ -1,0 +1,15 @@
+
+{
+    "devDependencies": {
+      "sass": "^1.81.0"
+    },
+    "dependencies": {
+      "node-sass": "^9.0.0",
+      "sass-loader": "^16.0.3"
+    },
+    "scripts": {
+    "build-sass": "sass wwwroot/scss/style.scss:wwwroot/css/style.css",
+    "watch-sass": "sass --watch wwwroot/scss/style.scss:wwwroot/css/style.css"
+  }
+}
+

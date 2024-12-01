@@ -3,8 +3,20 @@
       <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="LibSassHost" Version="1.5.0" />
     <PackageReference Include="Microsoft.Identity.Web" Version="1.*" />
     <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.*" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
+  
+  <Target Name="RunNodeScripts" BeforeTargets="Build">
+    <!-- Cài đặt dependencies nếu cần -->
+    <!-- <Exec Command="npm install" /> -->
+
+    <!-- Chạy script để biên dịch SASS -->
+    <Exec Command="npm run build-sass" />
+  </Target>
+
+
 </Project>

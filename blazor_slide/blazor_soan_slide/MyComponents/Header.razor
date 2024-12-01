@@ -61,6 +61,15 @@
                     <NavLink class="dropdown-item" href="/parent-lifecycle">Demo</NavLink>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Disponse</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <NavLink class="dropdown-item" href="/demo-disponse">Demo disponse</NavLink>
+                </div>
+            </li>
+
+
         </ul>
         <EditForm class="d-flex my-2 my-lg-0" EditContext="editContext" OnSubmit="HandleSubmit">
             <input class="form-control me-sm-2" type="text" placeholder="Search" @bind-value="keyword" />

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8xtRbosNMjnUqn/kEJ+spjHNJDLB7/QgaP5/AEexSno=",
+  "Hash": "qfZdOlyvBceIxIGuqJ9sZs0m0J+WdIMBFSJ/dvZPz3w=",
   "Source": "blazor_soan_slide",
   "BasePath": "_content/blazor_soan_slide",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "blazor_soan_slide\\wwwroot",
+      "Name": "blazor_soan_slide/wwwroot",
       "Source": "blazor_soan_slide",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/open-iconic/README.md",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+      "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\site.css",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/site.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -242,13 +242,51 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\data_movie.json",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/style.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "BasePath": "_content/blazor_soan_slide",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/css/style.css.map",
+      "SourceId": "blazor_soan_slide",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "BasePath": "_content/blazor_soan_slide",
+      "RelativePath": "css/style.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css.map"
+    },
+    {
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/data_movie.json",
+      "SourceId": "blazor_soan_slide",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "data_movie.json",
       "AssetKind": "All",
@@ -261,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\data_movie.json"
+      "OriginalItemSpec": "wwwroot/data_movie.json"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\data_showtime.json",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/data_showtime.json",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "data_showtime.json",
       "AssetKind": "All",
@@ -280,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\data_showtime.json"
+      "OriginalItemSpec": "wwwroot/data_showtime.json"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\favicon.ico",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/favicon.ico",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -299,13 +337,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\task-defaults.json",
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/scss/style.scss",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\blazor_new\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
+      "BasePath": "_content/blazor_soan_slide",
+      "RelativePath": "scss/style.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/scss/style.scss"
+    },
+    {
+      "Identity": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/task-defaults.json",
+      "SourceId": "blazor_soan_slide",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/DOTNET_SOAN_SLIDE/blazor/project_blazor_slide/project_blazor_slide/blazor_slide/blazor_soan_slide/wwwroot/",
       "BasePath": "_content/blazor_soan_slide",
       "RelativePath": "task-defaults.json",
       "AssetKind": "All",
@@ -318,7 +375,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\task-defaults.json"
+      "OriginalItemSpec": "wwwroot/task-defaults.json"
     }
   ]
 }

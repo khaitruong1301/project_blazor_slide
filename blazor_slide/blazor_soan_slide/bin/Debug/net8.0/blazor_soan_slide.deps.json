@@ -8,12 +8,22 @@
     ".NETCoreApp,Version=v8.0": {
       "blazor_soan_slide/1.0.0": {
         "dependencies": {
+          "BuildBundlerMinifier": "3.2.449",
+          "LibSassHost": "1.5.0",
           "Microsoft.Identity.Web": "1.26.0",
           "Microsoft.Identity.Web.UI": "1.26.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "blazor_soan_slide.dll": {}
+        }
+      },
+      "AdvancedStringBuilder/0.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/AdvancedStringBuilder.dll": {
+            "assemblyVersion": "0.1.1.0",
+            "fileVersion": "0.1.1.0"
+          }
         }
       },
       "Azure.Core/1.6.0": {
@@ -75,6 +85,18 @@
           "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll": {
             "assemblyVersion": "4.1.0.0",
             "fileVersion": "4.100.20.41103"
+          }
+        }
+      },
+      "BuildBundlerMinifier/3.2.449": {},
+      "LibSassHost/1.5.0": {
+        "dependencies": {
+          "AdvancedStringBuilder": "0.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/LibSassHost.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           }
         }
       },
@@ -500,6 +522,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AdvancedStringBuilder/0.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-32IrlspOA59ewotQ4tlKP27QhKxMKGB7oncqlwVHn/hAz+j/r3HvLr6/W9ni9Mnyktlcg6kt7QZS8rEgur1+4Q==",
+      "path": "advancedstringbuilder/0.1.1",
+      "hashPath": "advancedstringbuilder.0.1.1.nupkg.sha512"
+    },
     "Azure.Core/1.6.0": {
       "type": "package",
       "serviceable": true,
@@ -527,6 +556,20 @@
       "sha512": "sha512-SK4XTPEaXI5UTdtSkr8TN4ZKnvazNHhybnnkxHgOyRAhV9ObcIjbrNlhS4ZeR8XtI+HidL+v/WIIVfR1+jKB8Q==",
       "path": "azure.security.keyvault.secrets/4.1.0",
       "hashPath": "azure.security.keyvault.secrets.4.1.0.nupkg.sha512"
+    },
+    "BuildBundlerMinifier/3.2.449": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
+      "path": "buildbundlerminifier/3.2.449",
+      "hashPath": "buildbundlerminifier.3.2.449.nupkg.sha512"
+    },
+    "LibSassHost/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ymRT6y3rjy14xUU2Dl0HbG/TsSUyRNijUBDSCoTIx/zjczGTwxH9edTkZZxp9OF9uixb9BosGcaefNt+ajYx2w==",
+      "path": "libsasshost/1.5.0",
+      "hashPath": "libsasshost.1.5.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.12": {
       "type": "package",
