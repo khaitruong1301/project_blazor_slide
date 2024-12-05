@@ -3,7 +3,7 @@
 @inject HttpClient Http
 
 <div class="container">
-    
+
     <div class="row">
         <div class="col-4">
             <img src="@prod.Image" alt="..." />
@@ -16,6 +16,8 @@
     <button class="btn btn-dark">get</button>
 
     <button class="btn btn-dark" @onclick="getProductDetail">Get product detail</button>
+    <NavLink href="/detail/2" class="btn btn-dark">product 2</NavLink>
+    <NavLink href="/detail/3" class="btn btn-dark">product 3</NavLink>
 </div>
 
 
@@ -23,10 +25,16 @@
     [Parameter]
     public int id { get; set; } // Tham số nhận giá trị từ URL
     ProductDetailModel prod = new ProductDetailModel();
-    protected  async Task getProductDetail()
+    protected async Task getProductDetail()
     {
         // Gửi yêu cầu GET đến API
-        var response = await Http.GetFromJsonAsync<HttpResponse<ProductDetailModel>>($"https://apistore.cybersoft.edu.vn/api/Product/getbyid?id={id}");
+        var response = await
+        Http.GetFromJsonAsync<HttpResponse<ProductDetailModel>>($"https://apistore.cybersoft.edu.vn/api/Product/getbyid?id={id}");
         prod = response.content;
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        // Gửi yêu cầu GET đến API
+        await getProductDetail();
     }
 }

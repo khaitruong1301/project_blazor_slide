@@ -1,5 +1,6 @@
 @page "/search"
 @using Microsoft.Extensions.Primitives
+@using Newtonsoft.Json
 @inject HttpClient Http
 @inject NavigationManager Navigation
 
@@ -18,7 +19,8 @@
     </EditForm>
 
     <div class="row">
-        @foreach(var item in items){
+        @foreach (var item in items)
+        {
             <div class="col-4 mt-2">
                 <div class="card">
                     <img src="@item.Image" alt="..." />
@@ -39,11 +41,11 @@
     private IEnumerable<ProductModel> items = new List<ProductModel>();
 
 
-    protected void HandleSubmit()
+    protected async void HandleSubmit()
     {
         // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
-
-        Navigation.NavigateTo($"/home");
+        Navigation.NavigateTo($"/search?k={keyword}");
+        searchByKeyword(keyword);
 
     }
 
@@ -54,21 +56,23 @@
         // Lấy giá trị query parameter từ URL
         var uri = new Uri(Navigation.Uri);
         var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
-        // Gửi yêu cầu GET đến API
-        if (query.TryGetValue("k", out StringValues value))
-        {
-            var response = await
-            Http.GetFromJsonAsync<HttpResponse<ProductModel[]>>($"https://apistore.cybersoft.edu.vn/api/Product?keyword={keyword}");
-            items = response.content;
-        }
-        else
-        {
-            Console.WriteLine("");
-        }
+        string k = query.GetValueOrDefault("k");
+        searchByKeyword(k);
     }
-    protected async void searchByKeyword()
+    protected override async Task OnInitializedAsync()
     {
-        
+        var uri = new Uri(Navigation.Uri);
+        var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
+        string k = query.GetValueOrDefault("k");
+        searchByKeyword(k);
+    }
+
+    protected  void searchByKeyword(string k = "")
+    {
+
+        var response = 
+        Http.GetFromJsonAsync<HttpResponse<ProductModel[]>>($"https://apistore.cybersoft.edu.vn/api/Product?keyword={k}").Result;
+        items = response.content;
     }
 
 

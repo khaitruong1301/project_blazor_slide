@@ -1,0 +1,15 @@
+@page "/react-demo"
+@inject IJSRuntime JSRuntime
+@layout JSPageMaster
+
+
+
+<button @onclick="RenderReactComponent">Render React Component</button>
+<div id="content_123"></div>
+
+@code {
+    private async Task RenderReactComponent()
+    {
+        await JSRuntime.InvokeVoidAsync("renderReact",  "content_123");
+    }
+}

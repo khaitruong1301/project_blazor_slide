@@ -1,0 +1,72 @@
+@* @page "/search/{keyword?}"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@layout HomePageMaster
+<div class="container">
+    <h3>Search Products</h3>
+
+    <!-- Form tìm kiếm -->
+    <div>
+        <input @bind="Keyword" placeholder="Search for products..." class="search-input" />
+        <button @onclick="SearchProducts" class="search-btn">Search</button>
+    </div>
+
+    <!-- Hiển thị kết quả tìm kiếm -->
+    @if (products != null && products.Any())
+    {
+        <ul>
+            @foreach (var product in products)
+            {
+                <li>
+                    <strong>@product.name</strong> - $@product.price
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No products found. Please try a different keyword.</p>
+    }
+</div>
+@code {
+    [Parameter] public string keyword { get; set; } = string.Empty; // Tham số từ URL (optional)
+    private List<Product> products;
+    private string Keyword { get; set; } = string.Empty;
+
+    // Tìm kiếm sản phẩm theo từ khóa
+    private async Task SearchProducts()
+    {
+        Console.WriteLine(Keyword);
+
+        // Nếu không có từ khóa, chuyển hướng về Home
+        Navigation.NavigateTo($"/search?keyword={Keyword}");
+
+    }
+
+    // Sử dụng tham số keyword từ URL khi trang được load lần đầu tiên
+    protected override async Task OnInitializedAsync()
+    {
+        // Nếu có keyword trong URL, tìm kiếm khi trang được load
+        if (!string.IsNullOrEmpty(keyword))
+        {
+            Console.WriteLine(Keyword);
+
+            Keyword = keyword;
+            var response = await Http.GetFromJsonAsync<List<Product>>($"api/Product?keyword={Keyword}");
+
+            if (response != null)
+            {
+                products = response;
+            }
+        }
+    }
+
+    public class Product
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string alias { get; set; }
+        public double price { get; set; }
+        public string description { get; set; }
+    }
+} *@

@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\js\\libs\\react\\reactapp.mjs",
+      "PackagePath": "staticwebassets\\js\\libs\\react\\reactapp.mjs"
+    },
+    {
+      "Id": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
       "Id": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\scss\\style.scss",
       "PackagePath": "staticwebassets\\scss\\style.scss"
     },

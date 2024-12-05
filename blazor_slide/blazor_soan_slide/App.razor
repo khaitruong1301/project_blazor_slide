@@ -8,3 +8,24 @@
         </LayoutView>
     </NotFound>
 </Router>
+
+@* 
+<Router>: Là thành phần chính xử lý các yêu cầu điều hướng. Nó xác định cách ứng dụng của bạn xử lý URL và tìm kiếm các component phù hợp.
+
+<RouteView>: Được sử dụng để hiển thị các trang hoặc component tương ứng với URL hiện tại.
+
+<NotFound>: Hiển thị thông báo hoặc nội dung khi không tìm thấy route tương ứng với URL. 
+
+AppAssembly="@typeof(Program).Assembly":
+
+typeof(Program) là cú pháp trong C# để lấy Type của lớp Program. Program thường là lớp chứa Main method hoặc khởi tạo ứng dụng trong một ứng dụng ASP.NET Core hoặc Blazor.
+Assembly là một thành phần trong Type và nó chứa thông tin về assembly mà kiểu Program (hoặc bất kỳ kiểu nào) được biên dịch vào. Khi bạn sử dụng @typeof(Program).Assembly, bạn đang chỉ định cho Blazor biết assembly nào chứa các thành phần (components, pages,...) của ứng dụng Blazor mà Router sẽ xử lý.
+Cụ thể, @typeof(Program).Assembly chỉ định assembly nơi chứa các thành phần Blazor (Pages, Components, etc.) sẽ được tìm thấy và xử lý khi có yêu cầu từ Router.
+
+@routeData:
+
+RouteData là một đối tượng chứa thông tin về route hiện tại, bao gồm tên route, các tham số URL được truyền vào, v.v.
+Khi người dùng truy cập vào một URL cụ thể trong ứng dụng Blazor, RouteData sẽ chứa thông tin về route đó. Thông tin này được xử lý và truyền cho RouteView để render view tương ứng.
+
+
+*@
