@@ -41,7 +41,7 @@
     private IEnumerable<ProductModel> items = new List<ProductModel>();
 
 
-    protected async void HandleSubmit()
+    protected void HandleSubmit()
     {
         // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
         Navigation.NavigateTo($"/search?k={keyword}");
@@ -49,7 +49,7 @@
 
     }
 
-    protected override async Task OnParametersSetAsync()
+    protected override void OnParametersSet()
     {
         // Khởi tạo EditContext với một đối tượng dynamic hoặc new object()
         editContext = new EditContext(new object());
@@ -59,7 +59,7 @@
         string k = query.GetValueOrDefault("k");
         searchByKeyword(k);
     }
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         var uri = new Uri(Navigation.Uri);
         var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query);
@@ -67,10 +67,9 @@
         searchByKeyword(k);
     }
 
-    protected  void searchByKeyword(string k = "")
+    protected void searchByKeyword(string k = "")
     {
-
-        var response = 
+        var response =
         Http.GetFromJsonAsync<HttpResponse<ProductModel[]>>($"https://apistore.cybersoft.edu.vn/api/Product?keyword={k}").Result;
         items = response.content;
     }

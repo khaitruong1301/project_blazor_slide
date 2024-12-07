@@ -1,0 +1,21 @@
+@page "/product/{category}/{id:int}"
+<h3>Product Details</h3>
+@if (Id == 0 || string.IsNullOrEmpty(Category))
+{
+    <p>Invalid parameters!</p>
+}
+else
+{
+    <p>Category: @Category</p>
+    <p>Product ID: @Id</p>
+}
+
+@code {
+    [Parameter]
+    public string Category { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+}
+
+
