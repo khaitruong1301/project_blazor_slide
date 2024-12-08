@@ -18,158 +18,170 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\slidedotnet\project_blazor_slide\blazor_slide\blazor_soan_slide
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/App.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Children.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Children.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXENoaWxkcmVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Header.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXEhlYWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Modal.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Modal.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXE1vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Parent.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/Parent.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFBhcmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/PersonComponent.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/PersonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFBlcnNvbkNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/ProductCard.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/ProductCard.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFByb2R1Y3RDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/TableDetail.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/MyComponents/TableDetail.razor]
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnRzXFRhYmxlRGV0YWlsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/About.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/About.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/Cart.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/Cart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydERlbW9cQ2FydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/ProductPage.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/CartDemo/ProductPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydERlbW9cUHJvZHVjdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/ChildComponent.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/ChildComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpbGRDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Counter.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Crypto.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Crypto.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3J5cHRvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/DataBinding.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/DataBinding.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YUJpbmRpbmcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Detail.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Detail.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/EditUser.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/EditUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/FetchingDataApi.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/FetchingDataApi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hpbmdEYXRhQXBpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Index.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/LifeCycle.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/LifeCycle.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Disponse/DemoDisponse.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Disponse/DemoDisponse.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXERpc3BvbnNlXERlbW9EaXNwb25zZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/DemoApi.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/DemoApi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXEluaXRpYWxpemF0aW9uXERlbW9BcGkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/SetDefaultValue.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Initialization/SetDefaultValue.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXEluaXRpYWxpemF0aW9uXFNldERlZmF1bHRWYWx1ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/ChildComponentRendering.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/ChildComponentRendering.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXFJlZGVyaW5nXENoaWxkQ29tcG9uZW50UmVuZGVyaW5nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/ParentComponent.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/ParentComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXFJlZGVyaW5nXFBhcmVudENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/StaticComponent.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/Redering/StaticComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXFJlZGVyaW5nXFN0YXRpY0NvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/DemoSetParam.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/DemoSetParam.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXFNldFBhcmFtZXRlcnNBc3luY1xEZW1vU2V0UGFyYW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/ShowTime.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Lifecycle/SetParametersAsync/ShowTime.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZWN5Y2xlXFNldFBhcmFtZXRlcnNBc3luY1xTaG93VGltZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Login.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/ReactDemo.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/ReactDemo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVhY3REZW1vLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/RefDemo.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/RefDemo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmRGVtby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Register.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Search.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Search.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/SearchParam/Search.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/SearchParam/Search.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoUGFyYW1cU2VhcmNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/UsingJS/UsingJS.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Store/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmVcUGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Store/Shared/AdminMasterPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmVcU2hhcmVkXEFkbWluTWFzdGVyUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/Store/Shared/HomeMasterPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmVcU2hhcmVkXEhvbWVNYXN0ZXJQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/UsingJS/UsingJS.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNpbmdKU1xVc2luZ0pTLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Shared/HomePageMaster.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Shared/HomePageMaster.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhvbWVQYWdlTWFzdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Shared/JSPageMaster.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Shared/JSPageMaster.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEpTUGFnZU1hc3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/_Imports.razor]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/_Host.cshtml]
+[d:/slidedotnet/project_blazor_slide/blazor_slide/blazor_soan_slide/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

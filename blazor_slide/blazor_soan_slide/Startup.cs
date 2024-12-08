@@ -41,19 +41,41 @@ namespace blazor_soan_slide
             services.AddScoped<CryptoService>();
             services.AddScoped<ProductService>(); // Đăng ký ProductService
 
+
+
+            services.AddScoped<ProductStoreService>(); // Đăng ký ProductStoreService
+
             // Thêm HttpClient với cấu hình cơ bản (với các tham số mặc định)
-            services.AddHttpClient("myClient", client =>
+            services.AddHttpClient("apiStore", client =>
             {
-                client.BaseAddress = new Uri("https://apistore.cybersoft.edu.vn/api/");
+                client.BaseAddress = new Uri("https://apistore.cybersoft.edu.vn/");
+                client.Timeout = TimeSpan.FromSeconds(30);
+                client.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
+            });
+        
+
+            services.AddHttpClient("apiStore", client =>
+            {
+                client.BaseAddress = new Uri("https://apistore.cybersoft.edu.vn/");
                 client.Timeout = TimeSpan.FromSeconds(30);
                 client.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
             });
 
+
+
+            // services.AddHttpClient("apiOther", client => {
+            //      client.BaseAddress = new Uri("https://svcy.myclass.vn/");
+            //     client.Timeout = TimeSpan.FromSeconds(30);
+            //     client.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
+            // });
+
+
+
             // Thêm HttpClient cho các yêu cầu nội bộ (truy cập wwwroot)
-            services.AddScoped(sp => new HttpClient
-            {
-                BaseAddress = new Uri("https://localhost:5001/") // Thay đổi cổng tùy vào cấu hình của bạn
-            });
+            // services.AddScoped(sp => new HttpClient
+            // {
+            //     BaseAddress = new Uri("https://localhost:5001/") // Thay đổi cổng tùy vào cấu hình của bạn
+            // });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,103 @@
+@page "/store";
+@layout HomeMasterPage
+@inject HttpClient http;
+
+@using Microsoft.Extensions.DependencyInjection 
+@inject IServiceProvider httpService;
+
+
+@inject ProductStoreService prodService;
+<div class="container">
+    <h1>
+        Shoes store
+    </h1>
+    <section class="row">
+        <div class="col-md-4">
+            <nav class="list-unstyled border">
+                <li class="mt-2  p-3 border-start-0 border-end-0 border-bottom-0">
+                    <NavLink class="text-decoration-none active nav-link" href="#">Adidas</NavLink>
+                </li>
+                <li class="mt-2   p-3 border-start-0 border-end-0 border-bottom-0 border">
+                    <NavLink class="text-decoration-none" href="#">Nike</NavLink>
+                </li>
+                <li class="mt-2   p-3 border-start-0 border-end-0 border-bottom-0 border">
+                    <NavLink class="text-decoration-none" href="#">Converse</NavLink>
+                </li>
+            </nav>
+
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                @foreach (var prod in items)
+                {
+                    <div class="col-4 mt-2">
+                        <div class="card">
+                            <img style="height: 250px;" src="@prod.Image" alt="..." />
+                            <div class="card-body border-success border-1 shadow shadow-lg ">
+                                <h3>@prod.Name</h3>
+                                <p>Price: @prod.Price</p>
+                                <button class="btn btn-dark">Detail</button>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </section>
+</div>
+<style>
+    ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 10px;
+
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        border-radius: 10px;
+
+    }
+</style>
+
+@code {
+    public IEnumerable<ProductStore> items = new List<ProductStore>();
+    private HttpClient _httpStore;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        items = await prodService.GetAllProductAsync();
+    }
+
+
+      @* _httpStore = httpService.GetRequiredService<IHttpClientFactory>().CreateClient("apiStore");
+        var response = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
+        items = response.content; *@
+
+
+        @* _httpStore = HttpClientFactory.CreateClient("apiStore");
+        var response = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
+        items = response.content; *@
+
+
+
+
+}
