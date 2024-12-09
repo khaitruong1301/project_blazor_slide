@@ -40,9 +40,6 @@ namespace blazor_soan_slide
             services.AddScoped<CartService>();
             services.AddScoped<CryptoService>();
             services.AddScoped<ProductService>(); // Đăng ký ProductService
-
-
-
             services.AddScoped<ProductStoreService>(); // Đăng ký ProductStoreService
 
             // Thêm HttpClient với cấu hình cơ bản (với các tham số mặc định)
@@ -76,6 +73,14 @@ namespace blazor_soan_slide
             // {
             //     BaseAddress = new Uri("https://localhost:5001/") // Thay đổi cổng tùy vào cấu hình của bạn
             // });
+
+            
+            //Cấu hình signal R
+            services.AddSignalR();
+
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

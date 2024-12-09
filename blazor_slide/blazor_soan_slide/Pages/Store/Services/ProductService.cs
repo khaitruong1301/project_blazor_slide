@@ -13,7 +13,33 @@ public class ProductStoreService
     {
         _httpStore = serviceProvider.GetRequiredService<IHttpClientFactory>().CreateClient("apiStore");;
     }
-    public async Task<ProductStore[]> GetAllProductAsync()
+    public async Task<ProductStore[]> GetAllProductAsync(string keyword="")
+    {
+        // Sử dụng ExternalHttpClient
+        string url = "/api/Product";
+        if(!string.IsNullOrEmpty(keyword)){
+            url += $"{url}?keyword={keyword}";
+        }
+        var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>(url);
+        Console.WriteLine(JsonConvert.SerializeObject(res));
+        return res.content;
+    }
+
+    public async Task<ProductStore[]> CreateProduct(ProductStore newProduct)
+    {
+        // Sử dụng ExternalHttpClient
+        var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
+        Console.WriteLine(JsonConvert.SerializeObject(res));
+        return res.content;
+    }
+    public async Task<ProductStore[]> UpdateProduct(int id, ProductStore product)
+    {
+        // Sử dụng ExternalHttpClient
+        var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
+        Console.WriteLine(JsonConvert.SerializeObject(res));
+        return res.content;
+    }
+    public async Task<ProductStore[]> DeleteProduct(int id)
     {
         // Sử dụng ExternalHttpClient
         var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
