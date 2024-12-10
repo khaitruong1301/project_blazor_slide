@@ -12,7 +12,7 @@ public class ProductService
         _httpClient = httpClient;
     }
 
-    public async Task<HttpResponse<Product>> GetProductByIdAsync(int productId)
+    public async Task<HttpResponse<Product>> GetProductByIdAsync(int? productId=0)
     {
         try
         {

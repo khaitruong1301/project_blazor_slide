@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
@@ -11,13 +12,14 @@ public class ProductStoreService
     private readonly HttpClient _httpStore;
     public ProductStoreService(IServiceProvider serviceProvider)
     {
-        _httpStore = serviceProvider.GetRequiredService<IHttpClientFactory>().CreateClient("apiStore");;
+        _httpStore = serviceProvider.GetRequiredService<IHttpClientFactory>().CreateClient("apiStore"); ;
     }
-    public async Task<ProductStore[]> GetAllProductAsync(string keyword="")
+    public async Task<ProductStore[]> GetAllProductAsync(string keyword = "")
     {
         // Sử dụng ExternalHttpClient
         string url = "/api/Product";
-        if(!string.IsNullOrEmpty(keyword)){
+        if (!string.IsNullOrEmpty(keyword))
+        {
             url += $"{url}?keyword={keyword}";
         }
         var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>(url);
@@ -31,6 +33,17 @@ public class ProductStoreService
         var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
         Console.WriteLine(JsonConvert.SerializeObject(res));
         return res.content;
+    }
+    public async Task<ProductStore> GetProductById(string id="")
+    {
+        if (!string.IsNullOrEmpty(id))
+        {
+            // Sử dụng ExternalHttpClient
+            var res = await _httpStore.GetFromJsonAsync<HttpResponse<dynamic>>($"api/Product/getbyid?id={id}");
+            Console.WriteLine(JsonConvert.SerializeObject(res));
+            return res.content;
+        }
+        return new ProductStore();
     }
     public async Task<ProductStore[]> UpdateProduct(int id, ProductStore product)
     {

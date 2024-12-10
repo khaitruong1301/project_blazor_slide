@@ -1,0 +1,128 @@
+@page "/admin/product/{Id:int?}"
+
+@using System.Text.Json.Serialization
+@layout AdminMasterPage;
+@inject ProductStoreService prodService;
+<h3>@(Id != null ? "Edit Product" : "Add Product")</h3>
+<EditForm Model="ProductModel" OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="name">Name:</label>
+        <InputText id="name" @bind-Value="ProductModel.Name" class="form-control" />
+    </div>
+
+    <div>
+        <label for="alias">Alias:</label>
+        <InputText id="alias" @bind-Value="ProductModel.Alias" class="form-control" />
+    </div>
+
+    <div>
+        <label for="price">Price:</label>
+        <InputNumber id="price" @bind-Value="ProductModel.Price" class="form-control" />
+    </div>
+
+    <div>
+        <label for="description">Description:</label>
+        <InputTextArea id="description" @bind-Value="ProductModel.Description" class="form-control" />
+    </div>
+
+    <div>
+        <label for="size">Size:</label>
+        <InputText id="size" @bind-Value="ProductModel.Size" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">@(IsEditing ? "Save Change" : "Add Product") </button>
+    <button type="button" class="btn btn-secondary" @onclick="ClearForm">Cancel</button>
+</EditForm>
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; } = 0; // Route parameter
+
+    private List<ProductStore> Products = new List<ProductStore>();
+    private ProductStore ProductModel = new ProductStore();
+    private bool IsEditing = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        HandleSetProductForm();
+
+    }
+
+
+    protected async Task onParametersSetAsync()
+    {
+        HandleSetProductForm();
+    }
+    async void HandleSetProductForm()
+    {
+        if (Id == null)
+        {
+            IsEditing = false;
+        }
+        else
+        {
+            if (Id != 0)
+            {
+                ProductModel = await prodService.GetProductById(Id.ToString());
+                IsEditing = true;
+            }
+        }
+
+    }
+    private void HandleSubmit()
+    {
+        @* if (IsEditing)
+        {
+            // Update existing product
+            var existingProduct = Products.FirstOrDefault(p => p.Id == ProductModel.Id);
+            if (existingProduct != null)
+            {
+                existingProduct.Name = ProductModel.Name;
+                existingProduct.Alias = ProductModel.Alias;
+                existingProduct.Price = ProductModel.Price;
+                existingProduct.Description = ProductModel.Description;
+                existingProduct.Size = ProductModel.Size;
+            }
+        }
+        else
+        {
+            // Add new product
+            ProductModel.Id = Products.Count > 0 ? Products.Max(p => p.Id) + 1 : 1;
+            Products.Add(ProductModel);
+        } 
+        ClearForm();*@
+
+    }
+
+    private void EditProduct(ProductStore product)
+    {
+        @*  ProductModel = new ProductStore
+            {
+    using System.Reflection.Metadata;
+                Id = product.Id,
+                Name = product.Name,
+                Alias = product.Alias,
+                Price = product.Price,
+                Description = product.Description,
+                Size = product.Size
+            };
+        IsEditing = true; *@
+    }
+
+    private void DeleteProduct(ProductStore product)
+    {
+        @* Products.Remove(product); *@
+    }
+
+    private void ClearForm()
+    {
+        @* ProductModel = new ProductStore();
+        IsEditing = false; *@
+    }
+
+}
