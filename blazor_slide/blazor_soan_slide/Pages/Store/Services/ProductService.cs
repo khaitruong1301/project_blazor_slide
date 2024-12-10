@@ -1,11 +1,14 @@
+
+
+using blazor_soan_slide.Models;
+using blazor_soan_slide.ModelsOther;
+using blazor_soan_slide.Services.Utility;
+using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Globalization;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
 using System.Threading.Tasks;
-using blazor_soan_slide.Models;
-using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
 
 public class ProductStoreService
 {
@@ -14,7 +17,7 @@ public class ProductStoreService
     {
         _httpStore = serviceProvider.GetRequiredService<IHttpClientFactory>().CreateClient("apiStore"); ;
     }
-    public async Task<ProductStore[]> GetAllProductAsync(string keyword = "")
+    public async Task<ProductStoreModel[]> GetAllProductAsync(string keyword = "")
     {
         // Sử dụng ExternalHttpClient
         string url = "/api/Product";
@@ -22,8 +25,7 @@ public class ProductStoreService
         {
             url += $"{url}?keyword={keyword}";
         }
-        var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>(url);
-        Console.WriteLine(JsonConvert.SerializeObject(res));
+        var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStoreModel[]>>(url);
         return res.content;
     }
 
@@ -31,7 +33,6 @@ public class ProductStoreService
     {
         // Sử dụng ExternalHttpClient
         var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
-        Console.WriteLine(JsonConvert.SerializeObject(res));
         return res.content;
     }
     public async Task<ProductStore> GetProductById(string id="")
@@ -39,24 +40,25 @@ public class ProductStoreService
         if (!string.IsNullOrEmpty(id))
         {
             // Sử dụng ExternalHttpClient
-            var res = await _httpStore.GetFromJsonAsync<HttpResponse<dynamic>>($"api/Product/getbyid?id={id}");
-            Console.WriteLine(JsonConvert.SerializeObject(res));
-            return res.content;
+            var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore>>($"api/Product/getbyid?id={id}");
+            var productModel = FunctionUtility.MapToModel<ProductStore>(res.content);
+            return productModel;
         }
         return new ProductStore();
+           // var apiResponse = new ApiResponse { Id = 1, Name = "Product A", Price = 100, Alias = "PA", Size = "M" };
+    // var productModel = MapToModel<ProductModel>(apiResponse);
+
     }
     public async Task<ProductStore[]> UpdateProduct(int id, ProductStore product)
     {
         // Sử dụng ExternalHttpClient
         var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
-        Console.WriteLine(JsonConvert.SerializeObject(res));
         return res.content;
     }
     public async Task<ProductStore[]> DeleteProduct(int id)
     {
         // Sử dụng ExternalHttpClient
         var res = await _httpStore.GetFromJsonAsync<HttpResponse<ProductStore[]>>("api/Product");
-        Console.WriteLine(JsonConvert.SerializeObject(res));
         return res.content;
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cyXh7owiUIxxYsjP3GMCqYi0gT6FQ8w/IwmhMPnk9+o=",
+  "Hash": "XDelq89PLtb6ynkR8OiIq4Y8RQsrLUncVmUHGsdIpjo=",
   "Source": "blazor_soan_slide",
   "BasePath": "_content/blazor_soan_slide",
   "Mode": "Default",
@@ -17,7 +17,7 @@
   ],
   "Assets": [
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -36,7 +36,7 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -55,7 +55,7 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -74,7 +74,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -93,7 +93,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -112,7 +112,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -131,7 +131,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -150,7 +150,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -169,7 +169,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -188,7 +188,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -207,7 +207,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -226,7 +226,7 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\site.css",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\site.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -245,7 +245,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\style.css",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\style.css",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -264,7 +264,7 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\style.css.map",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\css\\style.css.map",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -283,7 +283,7 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css.map"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\data_movie.json",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\data_movie.json",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -302,7 +302,7 @@
       "OriginalItemSpec": "wwwroot\\data_movie.json"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\data_showtime.json",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\data_showtime.json",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -321,7 +321,7 @@
       "OriginalItemSpec": "wwwroot\\data_showtime.json"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\favicon.ico",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\favicon.ico",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\js\\libs\\react\\reactapp.mjs",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\js\\libs\\react\\reactapp.mjs",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -359,7 +359,7 @@
       "OriginalItemSpec": "wwwroot\\js\\libs\\react\\reactapp.mjs"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\js\\main.js",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\js\\main.js",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -378,7 +378,7 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\scss\\style.scss",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\scss\\style.scss",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",
@@ -397,7 +397,7 @@
       "OriginalItemSpec": "wwwroot\\scss\\style.scss"
     },
     {
-      "Identity": "d:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\task-defaults.json",
+      "Identity": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\task-defaults.json",
       "SourceId": "blazor_soan_slide",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\slidedotnet\\project_blazor_slide\\blazor_slide\\blazor_soan_slide\\wwwroot\\",

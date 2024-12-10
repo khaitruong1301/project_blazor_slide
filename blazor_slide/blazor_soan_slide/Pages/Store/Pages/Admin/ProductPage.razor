@@ -3,7 +3,9 @@
 @using System.Text.Json.Serialization
 @layout AdminMasterPage;
 @inject ProductStoreService prodService;
-<h3>@(Id != null ? "Edit Product" : "Add Product")</h3>
+
+<h3>@(Id != 0 ? "Edit Product" : "Add Product")</h3>
+
 <EditForm Model="ProductModel" OnValidSubmit="HandleSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
@@ -28,101 +30,54 @@
         <InputTextArea id="description" @bind-Value="ProductModel.Description" class="form-control" />
     </div>
 
-    <div>
-        <label for="size">Size:</label>
-        <InputText id="size" @bind-Value="ProductModel.Size" class="form-control" />
-    </div>
 
-    <button type="submit" class="btn btn-primary mt-2">@(IsEditing ? "Save Change" : "Add Product") </button>
+    <button type="submit" class="btn btn-primary mt-2">@(IsEditing ? "Save Change" : "Add Product")</button>
     <button type="button" class="btn btn-secondary" @onclick="ClearForm">Cancel</button>
 </EditForm>
 
-
-
 @code {
     [Parameter]
-    public int Id { get; set; } = 0; // Route parameter
+    public int? Id { get; set; } // Route parameter
 
-    private List<ProductStore> Products = new List<ProductStore>();
     private ProductStore ProductModel = new ProductStore();
     private bool IsEditing = false;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
-        HandleSetProductForm();
-
+        await HandleSetProductForm();
     }
 
-
-    protected async Task onParametersSetAsync()
+    private async Task HandleSetProductForm()
     {
-        HandleSetProductForm();
-    }
-    async void HandleSetProductForm()
-    {
-        if (Id == null)
+        if (Id.HasValue && Id.Value != 0)
         {
-            IsEditing = false;
+            ProductModel = await prodService.GetProductById(Id.Value.ToString());
+            IsEditing = true;
         }
         else
         {
-            if (Id != 0)
-            {
-                ProductModel = await prodService.GetProductById(Id.ToString());
-                IsEditing = true;
-            }
+            ProductModel = new ProductStore();
+            IsEditing = false;
         }
-
     }
-    private void HandleSubmit()
+
+    private async Task HandleSubmit()
     {
         @* if (IsEditing)
         {
-            // Update existing product
-            var existingProduct = Products.FirstOrDefault(p => p.Id == ProductModel.Id);
-            if (existingProduct != null)
-            {
-                existingProduct.Name = ProductModel.Name;
-                existingProduct.Alias = ProductModel.Alias;
-                existingProduct.Price = ProductModel.Price;
-                existingProduct.Description = ProductModel.Description;
-                existingProduct.Size = ProductModel.Size;
-            }
+            await prodService.UpdateProduct(ProductModel);
         }
         else
         {
-            // Add new product
-            ProductModel.Id = Products.Count > 0 ? Products.Max(p => p.Id) + 1 : 1;
-            Products.Add(ProductModel);
-        } 
-        ClearForm();*@
+            await prodService.AddProduct(ProductModel);
+        } *@
 
-    }
-
-    private void EditProduct(ProductStore product)
-    {
-        @*  ProductModel = new ProductStore
-            {
-    using System.Reflection.Metadata;
-                Id = product.Id,
-                Name = product.Name,
-                Alias = product.Alias,
-                Price = product.Price,
-                Description = product.Description,
-                Size = product.Size
-            };
-        IsEditing = true; *@
-    }
-
-    private void DeleteProduct(ProductStore product)
-    {
-        @* Products.Remove(product); *@
+        ClearForm();
     }
 
     private void ClearForm()
     {
-        @* ProductModel = new ProductStore();
-        IsEditing = false; *@
+        ProductModel = new ProductStore();
+        IsEditing = false;
     }
-
 }

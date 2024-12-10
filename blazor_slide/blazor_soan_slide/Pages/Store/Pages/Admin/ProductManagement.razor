@@ -1,9 +1,12 @@
 @page "/admin/product-management"
 @layout AdminMasterPage
 @inject ProductStoreService prdService;
+@using Microsoft.AspNetCore.SignalR.Client;
 
 <h3>Product management</h3>
 <div class="container">
+    <button class="btn btn-dark mt-2" @onclick="SendMessageToServer">Send Message</button>
+
     <NavLink class="btn btn-success" href="/admin/product">Add new product</NavLink>
     <table class="table table-dark table-hover">
         <thead>
@@ -15,7 +18,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (ProductStore item in items)
+            @foreach (ProductStoreModel item in items)
             {
                 <tr>
                     <td>@item.Id</td>
@@ -30,13 +33,54 @@
             }
         </tbody>
     </table>
+<button class="btn btn-primary" @onclick="HandleButtonClick">Click Me</button>
+
+
 </div>
 
 @code {
-    public IEnumerable<ProductStore> items = new List<ProductStore>();
+    @inject NavigationManager Navigation
+
+    @* private HubConnection? connection; *@
+        public IEnumerable<ProductStoreModel> items = new List<ProductStoreModel>();
+    // Hàm xử lý khi button được nhấn
+    public void SendMessageToServer()
+    {
+        Console.WriteLine("123");
+ 
+    }
+    
+   private void HandleButtonClick()
+    {
+        Console.WriteLine("Button clicked!");
+    }
     protected override async Task OnInitializedAsync()
     {
         items = await prdService.GetAllProductAsync();
+         @*//Cấu hình
+        connection = new HubConnectionBuilder()
+        .WithUrl(Navigation.ToAbsoluteUri("/product-hub")) // "/product-hub" là đường dẫn của Hub được map trên server
+        .Build();
+        //Mở kết nối với server
+        await connection.StartAsync();
+        // Sau khi kết nối thành công, client có thể giao tiếp với server
+        // Đăng ký sự kiện để nhận thông điệp từ server
+
+        connection.On<string>("ReceiveMessage", (message) =>
+        {
+            Console.WriteLine($"Message received: {message}");
+        }); *@
+
+
     }
+
+    // Dispose kết nối khi component không còn được sử dụng
+    @* public async ValueTask DisposeAsync()
+    {
+        if (connection is not null)
+        {
+            await connection.DisposeAsync();
+        }
+    } *@
 
 }
