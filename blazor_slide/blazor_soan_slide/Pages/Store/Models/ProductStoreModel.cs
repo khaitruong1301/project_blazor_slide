@@ -15,21 +15,22 @@ public partial class ProductStoreModel
     [JsonPropertyName("name")]
     public string Name { get; set; }
 
-    [JsonPropertyName("alias")]
-    public string Alias { get; set; }
-
     [JsonPropertyName("price")]
     public double Price { get; set; }
 
+    [JsonPropertyName("description")]
+    public string Description { get; set; }
 
+    [JsonPropertyName("shortDescription")]
+    public string ShortDescription { get; set; }
 
-    [JsonPropertyName("image")]
-    public Uri Image { get; set; }
+    [JsonPropertyName("quantity")]
+    public double Quantity { get; set; }
 
     [JsonPropertyName("imgLink")]
     public string ImgLink { get; set; }
-
-
-
 }
+
+
+
 

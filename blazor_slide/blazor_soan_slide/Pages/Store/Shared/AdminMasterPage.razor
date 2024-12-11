@@ -2,16 +2,23 @@
 
 <div class="bg-dark text-white container-fluid">
     <div class="row">
-        <div class="col-md-2 p-4">
-            <a href="#">
-                <img class="rounded-circle" src="https://picsum.photos/id/200/200" alt="..." width="75" height="75" />
-            </a>
+        <div class="col-md-2 p-4 d-flex flex-column align-content-center justify-content-center">
+            <div class="text-center">
+                <a href="/admin/product-management" class="d-inline-block bg-secondary w-auto p-3 rounded">
+                    <img src="https://cyberlearn.vn/wp-content/uploads/2017/03/cropped-min-new-32x32.png" alt="..."
+                        width="32" height="32" />
+                </a>
+            </div>
+            <h2 class="fs-5 text-center mt-2">Cybersoft store</h2>
         </div>
         <div class="col-md-10 text-end align-items-center d-flex justify-content-end">
             <div class="btn-group">
-                <a href="#" class="d-inline-block btn-danger rounded rounded-circle" style="width: 75px;heigh:75px;">
+                <a href="#"
+                    class="text-decoration-none text-center d-inline-block btn-danger rounded rounded-circle d-flex flex-column align-items-center"
+                    style="width: auto;heigh:75px;">
                     <img class="d-inline-block btn-danger rounded rounded-circle" src="https://i.pravatar.cc?u=1"
                         alt="..." height="50" width="50" />
+                    <p class="fs-6 text-white d-inline"> Khải Admin</p>
                 </a>
                 <button type="button" class="btn bg-transparent dropdown-toggle dropdown-toggle-split text-white"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,15 +44,17 @@
         <div class="container">
             <ul class="mt-5 list-unstyled">
                 <li class="mt-2">
-                    <a href="#" class="text-white text-decoration-none mt-3"> <i class="fa fa-user"></i> Product Management</a>
+                    <NavLink href="/admin/product-management" class="text-white text-decoration-none mt-3"> <i
+                            class="fa fa-user"></i> Product Management</NavLink>
                 </li>
-                <li href="#" class="text-white text-decoration-none mt-3"> <i class="fa fa-heart"></i> User Management</li>
+                <li href="#" class="text-white text-decoration-none mt-3"> <i class="fa fa-heart"></i> User Management
+                </li>
             </ul>
         </div>
     </div>
     <div class="col-md-9 bg-light text-dark  border border-secondary ">
         <div class="container-fluid mt-2">
-        @Body
+            @Body
         </div>
     </div>
 </div>

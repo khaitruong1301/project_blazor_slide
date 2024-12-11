@@ -3,38 +3,63 @@
 @using System.Text.Json.Serialization
 @layout AdminMasterPage;
 @inject ProductStoreService prodService;
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item  " aria-current="page">
+            <NavLink href="/admin/product-management" class="text-decoration-none nav-link">
+                Product management
+            </NavLink>
+        </li>
+        <li class="breadcrumb-item " aria-current="page">
+            <NavLink href="/admin/product" class=" text-decoration-none active">
+                @(Id != 0 && Id != null ? "Edit Product" : "Add Product")
+            </NavLink>
 
-<h3>@(Id != 0 ? "Edit Product" : "Add Product")</h3>
-
-<EditForm Model="ProductModel" OnValidSubmit="HandleSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-
-    <div>
-        <label for="name">Name:</label>
-        <InputText id="name" @bind-Value="ProductModel.Name" class="form-control" />
-    </div>
-
-    <div>
-        <label for="alias">Alias:</label>
-        <InputText id="alias" @bind-Value="ProductModel.Alias" class="form-control" />
-    </div>
-
-    <div>
-        <label for="price">Price:</label>
-        <InputNumber id="price" @bind-Value="ProductModel.Price" class="form-control" />
-    </div>
-
-    <div>
-        <label for="description">Description:</label>
-        <InputTextArea id="description" @bind-Value="ProductModel.Description" class="form-control" />
-    </div>
+        </li>
+    </ol>
+</nav>
+<div class="container w-75">
+    <h3>@(Id != 0 && Id != null ? "Edit Product" : "Add Product")</h3>
 
 
-    <button type="submit" class="btn btn-primary mt-2">@(IsEditing ? "Save Change" : "Add Product")</button>
-    <button type="button" class="btn btn-secondary" @onclick="ClearForm">Cancel</button>
-</EditForm>
+    <EditForm Model="ProductModel" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
 
+        <div>
+            <label for="name">Name:</label>
+            <InputText id="name" @bind-Value="ProductModel.Name" class="form-control" />
+        </div>
+
+        <div>
+            <label for="alias">Alias:</label>
+            <InputText id="alias" @bind-Value="ProductModel.Alias" class="form-control" />
+        </div>
+
+        <div>
+            <label for="price">Price:</label>
+            <InputNumber id="price" @bind-Value="ProductModel.Price" class="form-control" />
+        </div>
+
+        <div>
+            <label for="description">Description:</label>
+            <InputTextArea id="description" @bind-Value="ProductModel.Description" class="form-control" />
+        </div>
+
+        <div class="form-group mt-2">
+            <button type="submit" class="btn btn-primary">@(IsEditing ? "Save Change" : "Add Product")</button>
+            <button type="button" class="btn btn-secondary" @onclick="ClearForm">Cancel</button>
+
+
+            <NavLink href="/admin/product-management" class="nav-link"> @{
+                    string str = "<<";
+                    <b>@str Goback</b>
+                }
+            </NavLink>
+        </div>
+
+    </EditForm>
+</div>
 @code {
     [Parameter]
     public int? Id { get; set; } // Route parameter
@@ -69,7 +94,7 @@
         }
         else
         {
-            await prodService.AddProduct(ProductModel);
+            await prodService.CreateProduct(ProductModel);
         } *@
 
         ClearForm();

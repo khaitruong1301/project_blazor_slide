@@ -32,9 +32,9 @@
                 {
                     <div class="col-4 mt-2">
                         <div class="card">
-                            <img style="height: 250px;" src="@prod.Image" alt="..." />
+                            <img style="height: 250px;" src="@prod.ImgLink" alt="..." />
                             <div class="card-body border-success border-1 shadow shadow-lg ">
-                                <h3>@prod.Name</h3>
+                                <h3 class="fs-5">@prod.Name</h3>
                                 <p>Price: @prod.Price</p>
                                 <button class="btn btn-dark">Detail</button>
                             </div>
@@ -78,7 +78,7 @@
 </style>
 
 @code {
-    public IEnumerable<ProductStoreModel> items = new List<ProductStoreModel>();
+    public IEnumerable<ProductStore> items = new List<ProductStore>();
     private HttpClient _httpStore;
 
 
